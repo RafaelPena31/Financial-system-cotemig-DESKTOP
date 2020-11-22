@@ -1,0 +1,16 @@
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\bin\Debug\sistema_finaneiro.exe.config
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\bin\Debug\sistema_finaneiro.exe
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\bin\Debug\sistema_finaneiro.pdb
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.csprojAssemblyReference.cache
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Create_category.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Create_expense.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.btnReturnRecipe.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.History.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Profile.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Transaction.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.User_login.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Properties.Resources.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.User_register.resources
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.csproj.GenerateResource.cache
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.exe
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.pdb
