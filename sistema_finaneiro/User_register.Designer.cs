@@ -117,6 +117,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(269, 22);
             this.txtName.TabIndex = 17;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblSex
             // 

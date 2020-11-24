@@ -14,3 +14,4 @@ C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema
 C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.csproj.GenerateResource.cache
 C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.exe
 C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.pdb
+C:\Users\Fred\source\repos\sistema_finaneiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Change_profile.resources
