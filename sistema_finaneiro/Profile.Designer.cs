@@ -48,23 +48,25 @@
             // 
             this.lblHeaderBalance.AutoSize = true;
             this.lblHeaderBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderBalance.ForeColor = System.Drawing.Color.White;
-            this.lblHeaderBalance.Location = new System.Drawing.Point(360, 28);
+            this.lblHeaderBalance.Location = new System.Drawing.Point(365, 28);
             this.lblHeaderBalance.Name = "lblHeaderBalance";
-            this.lblHeaderBalance.Size = new System.Drawing.Size(80, 28);
+            this.lblHeaderBalance.Size = new System.Drawing.Size(79, 25);
             this.lblHeaderBalance.TabIndex = 35;
-            this.lblHeaderBalance.Text = "Saldo: ";
+            this.lblHeaderBalance.Text = "Saldo:";
+            this.lblHeaderBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHeaderBalance.Click += new System.EventHandler(this.lblHeaderBalance_Click);
             // 
             // lblValueBalance
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
-            this.lblValueBalance.Location = new System.Drawing.Point(352, 63);
+            this.lblValueBalance.Location = new System.Drawing.Point(351, 63);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
+            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
             this.lblValueBalance.TabIndex = 34;
             this.lblValueBalance.Text = "R$ 00,00";
             // 
@@ -82,7 +84,7 @@
             // 
             this.btnViewData.AutoEllipsis = true;
             this.btnViewData.BackColor = System.Drawing.Color.White;
-            this.btnViewData.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewData.Image = ((System.Drawing.Image)(resources.GetObject("btnViewData.Image")));
             this.btnViewData.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnViewData.Location = new System.Drawing.Point(134, 235);
@@ -100,7 +102,7 @@
             // 
             this.btnChangeName.AutoEllipsis = true;
             this.btnChangeName.BackColor = System.Drawing.Color.White;
-            this.btnChangeName.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeName.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeName.Image")));
             this.btnChangeName.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangeName.Location = new System.Drawing.Point(320, 235);
@@ -117,7 +119,7 @@
             // 
             this.btnChangeEmail.AutoEllipsis = true;
             this.btnChangeEmail.BackColor = System.Drawing.Color.White;
-            this.btnChangeEmail.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeEmail.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeEmail.Image")));
             this.btnChangeEmail.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangeEmail.Location = new System.Drawing.Point(506, 235);
@@ -134,7 +136,7 @@
             // 
             this.btnChangeTelephone.AutoEllipsis = true;
             this.btnChangeTelephone.BackColor = System.Drawing.Color.White;
-            this.btnChangeTelephone.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeTelephone.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeTelephone.Image")));
             this.btnChangeTelephone.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangeTelephone.Location = new System.Drawing.Point(506, 409);
@@ -151,7 +153,7 @@
             // 
             this.btnChangeAdress.AutoEllipsis = true;
             this.btnChangeAdress.BackColor = System.Drawing.Color.White;
-            this.btnChangeAdress.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeAdress.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeAdress.Image")));
             this.btnChangeAdress.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangeAdress.Location = new System.Drawing.Point(320, 409);
@@ -168,7 +170,7 @@
             // 
             this.btnChangePassword.AutoEllipsis = true;
             this.btnChangePassword.BackColor = System.Drawing.Color.White;
-            this.btnChangePassword.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePassword.Image")));
             this.btnChangePassword.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChangePassword.Location = new System.Drawing.Point(134, 409);
@@ -185,11 +187,11 @@
             // 
             this.lblInstruction.AutoSize = true;
             this.lblInstruction.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblInstruction.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstruction.ForeColor = System.Drawing.Color.Black;
             this.lblInstruction.Location = new System.Drawing.Point(294, 183);
             this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(212, 28);
+            this.lblInstruction.Size = new System.Drawing.Size(225, 25);
             this.lblInstruction.TabIndex = 56;
             this.lblInstruction.Text = "O que deseja fazer?";
             // 
@@ -197,7 +199,7 @@
             // 
             this.btnDeleteAccount.AutoEllipsis = true;
             this.btnDeleteAccount.BackColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAccount.Image")));
             this.btnDeleteAccount.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnDeleteAccount.Location = new System.Drawing.Point(320, 588);

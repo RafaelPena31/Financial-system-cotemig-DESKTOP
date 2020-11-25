@@ -16,5 +16,15 @@ namespace sistema_finaneiro
         {
             InitializeComponent();
         }
+
+        private void btnCreateRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNameRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

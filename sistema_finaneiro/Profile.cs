@@ -21,5 +21,10 @@ namespace sistema_finaneiro
         {
 
         }
+
+        private void lblHeaderBalance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

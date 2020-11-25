@@ -15,58 +15,22 @@ namespace sistema_finaneiro
 
         private MySqlConnection conexao;
 
+        public MySqlConnection getConexao()
+        {
+            return this.conexao;
+        }
+
+
         public void ConectarBD()
         {
             try
             {
-                conexao = new MySqlConnection("Persist Security info = false;server=localhost;database=SISTEMA_FINANCEIRO.user=root;pwd=");
+                conexao = new MySqlConnection("Persist Security info = false;server=localhost;database=SISTEMA_FINANCEIRO;user=root;pwd=");
                 conexao.Open();
             }
             catch 
             {
                 throw;
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
-
-        public int AlterarDados(string sql)
-        {
-            try
-            {
-                ConectarBD();
-                MySqlCommand cmd = new MySqlCommand(sql, conexao);
-                return cmd.ExecuteNonQuery();
-            }
-            catch
-            {
-                throw;
-            }
-            finally
-            {
-                conexao.Close();
-            }
-        }
-
-        public DataTable ConsultarDados(string sql)
-        {
-            try
-            {
-                ConectarBD();
-                DataTable dt = new DataTable(); 
-                MySqlDataAdapter da = new MySqlDataAdapter(sql, conexao);
-                da.Fill(dt);
-                return dt;
-            }
-            catch
-            {
-                throw;
-            }
-            finally
-            {
-                conexao.Close();
             }
         }
     }

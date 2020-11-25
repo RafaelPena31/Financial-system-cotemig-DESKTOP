@@ -17,9 +17,11 @@ namespace sistema_finaneiro
             InitializeComponent();
         }
 
+        User UserClass = new User();
+        string sql;
+
         private void User_register_Load(object sender, EventArgs e)
         {
-
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -49,7 +51,7 @@ namespace sistema_finaneiro
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void cbxSex_SelectedIndexChanged(object sender, EventArgs e)
@@ -64,10 +66,29 @@ namespace sistema_finaneiro
 
         private void btn_userregister_Click(object sender, EventArgs e)
         {
+            sql = string.Format("insert into user values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')",txtName.Text,cbxSex.Text,txtEmail.Text,txtAdress.Text,mtxtPhone.Text,
+                textPassword.Text, 0, 0, 0);
+            if (UserClass.CreateUser(sql, txtEmail.Text, textPassword.Text))
+            {
+                this.Visible = false;
+                Transaction TransactionForm = new Transaction();
+                TransactionForm.ShowDialog();
+                this.Visible = true;
+            }
 
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAdress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mtxtPhone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

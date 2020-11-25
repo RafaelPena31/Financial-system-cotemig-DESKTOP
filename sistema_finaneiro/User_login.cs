@@ -17,6 +17,9 @@ namespace sistema_finaneiro
             InitializeComponent();
         }
 
+        User UserClass = new User();
+        string sql;
+
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -34,7 +37,13 @@ namespace sistema_finaneiro
 
         private void btn_alterar_Click(object sender, EventArgs e)
         {
-
+            if(UserClass.Authenticator(txtEmail.Text, textPassword.Text))
+            {
+                this.Visible = false;
+                Transaction TransactionForm = new Transaction();
+                TransactionForm.ShowDialog();
+                this.Visible = true;
+            }
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -44,7 +53,10 @@ namespace sistema_finaneiro
 
         private void btn_cadastrar_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            User_register user_RegisterForm = new User_register();
+            user_RegisterForm.ShowDialog();
+            this.Visible = true;
         }
     }
 }

@@ -49,7 +49,7 @@
             this.btnCreateRecipe.BackColor = System.Drawing.Color.White;
             this.btnCreateRecipe.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateRecipe.Image")));
             this.btnCreateRecipe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreateRecipe.Location = new System.Drawing.Point(306, 459);
+            this.btnCreateRecipe.Location = new System.Drawing.Point(308, 459);
             this.btnCreateRecipe.Name = "btnCreateRecipe";
             this.btnCreateRecipe.Padding = new System.Windows.Forms.Padding(13, 3, 13, 3);
             this.btnCreateRecipe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -58,13 +58,14 @@
             this.btnCreateRecipe.Text = "Criar";
             this.btnCreateRecipe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateRecipe.UseVisualStyleBackColor = false;
+            this.btnCreateRecipe.Click += new System.EventHandler(this.btnCreateRecipe_Click);
             // 
             // lblValueRecipe
             // 
             this.lblValueRecipe.AutoSize = true;
             this.lblValueRecipe.Location = new System.Drawing.Point(158, 382);
             this.lblValueRecipe.Name = "lblValueRecipe";
-            this.lblValueRecipe.Size = new System.Drawing.Size(87, 15);
+            this.lblValueRecipe.Size = new System.Drawing.Size(81, 13);
             this.lblValueRecipe.TabIndex = 39;
             this.lblValueRecipe.Text = "Valor da receita";
             // 
@@ -73,7 +74,7 @@
             this.cbxNameRecipe.FormattingEnabled = true;
             this.cbxNameRecipe.Location = new System.Drawing.Point(158, 249);
             this.cbxNameRecipe.Name = "cbxNameRecipe";
-            this.cbxNameRecipe.Size = new System.Drawing.Size(269, 23);
+            this.cbxNameRecipe.Size = new System.Drawing.Size(269, 21);
             this.cbxNameRecipe.TabIndex = 37;
             // 
             // lblChooseDateRecipe
@@ -81,7 +82,7 @@
             this.lblChooseDateRecipe.AutoSize = true;
             this.lblChooseDateRecipe.Location = new System.Drawing.Point(158, 301);
             this.lblChooseDateRecipe.Name = "lblChooseDateRecipe";
-            this.lblChooseDateRecipe.Size = new System.Drawing.Size(81, 15);
+            this.lblChooseDateRecipe.Size = new System.Drawing.Size(78, 13);
             this.lblChooseDateRecipe.TabIndex = 36;
             this.lblChooseDateRecipe.Text = "Escolha a data";
             // 
@@ -90,22 +91,23 @@
             this.lblNameRecipe.AutoSize = true;
             this.lblNameRecipe.Location = new System.Drawing.Point(158, 218);
             this.lblNameRecipe.Name = "lblNameRecipe";
-            this.lblNameRecipe.Size = new System.Drawing.Size(91, 15);
+            this.lblNameRecipe.Size = new System.Drawing.Size(85, 13);
             this.lblNameRecipe.TabIndex = 35;
             this.lblNameRecipe.Text = "Nome da receita";
+            this.lblNameRecipe.Click += new System.EventHandler(this.lblNameRecipe_Click);
             // 
             // dtpDateRecipe
             // 
             this.dtpDateRecipe.Location = new System.Drawing.Point(158, 332);
             this.dtpDateRecipe.Name = "dtpDateRecipe";
-            this.dtpDateRecipe.Size = new System.Drawing.Size(269, 22);
+            this.dtpDateRecipe.Size = new System.Drawing.Size(269, 20);
             this.dtpDateRecipe.TabIndex = 42;
             // 
             // txtValueRecipe
             // 
             this.txtValueRecipe.Location = new System.Drawing.Point(158, 414);
             this.txtValueRecipe.Name = "txtValueRecipe";
-            this.txtValueRecipe.Size = new System.Drawing.Size(269, 22);
+            this.txtValueRecipe.Size = new System.Drawing.Size(269, 20);
             this.txtValueRecipe.TabIndex = 43;
             // 
             // btnRecipeReturn
@@ -127,23 +129,24 @@
             // 
             this.lblHeaderRecipe.AutoSize = true;
             this.lblHeaderRecipe.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderRecipe.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderRecipe.ForeColor = System.Drawing.Color.White;
-            this.lblHeaderRecipe.Location = new System.Drawing.Point(245, 31);
+            this.lblHeaderRecipe.Location = new System.Drawing.Point(246, 31);
             this.lblHeaderRecipe.Name = "lblHeaderRecipe";
-            this.lblHeaderRecipe.Size = new System.Drawing.Size(95, 28);
+            this.lblHeaderRecipe.Size = new System.Drawing.Size(99, 25);
             this.lblHeaderRecipe.TabIndex = 57;
             this.lblHeaderRecipe.Text = "Receita:";
+            this.lblHeaderRecipe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblValueBalance
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
-            this.lblValueBalance.Location = new System.Drawing.Point(244, 70);
+            this.lblValueBalance.Location = new System.Drawing.Point(242, 70);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
+            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
             this.lblValueBalance.TabIndex = 56;
             this.lblValueBalance.Text = "R$ 00,00";
             // 
@@ -159,7 +162,7 @@
             // 
             // btnReturnRecipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 622);
             this.Controls.Add(this.lblHeaderRecipe);
@@ -173,7 +176,7 @@
             this.Controls.Add(this.cbxNameRecipe);
             this.Controls.Add(this.lblChooseDateRecipe);
             this.Controls.Add(this.lblNameRecipe);
-            this.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "btnReturnRecipe";
             this.Text = "Create_recipe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
