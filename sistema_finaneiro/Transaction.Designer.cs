@@ -65,6 +65,7 @@
             this.btnExpense.Text = "Criar Despesa";
             this.btnExpense.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnExpense.UseVisualStyleBackColor = false;
+            this.btnExpense.Click += new System.EventHandler(this.btnExpense_Click);
             // 
             // btnRecipe
             // 
@@ -81,6 +82,7 @@
             this.btnRecipe.Text = "Criar Receita";
             this.btnRecipe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRecipe.UseVisualStyleBackColor = false;
+            this.btnRecipe.Click += new System.EventHandler(this.btnRecipe_Click);
             // 
             // btnCategory
             // 
@@ -139,6 +141,7 @@
             this.btnHistory.Text = "Histórico";
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnProfile
             // 
@@ -155,6 +158,7 @@
             this.btnProfile.Text = "Perfil";
             this.btnProfile.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnProfile.UseVisualStyleBackColor = false;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // Transaction
             // 
@@ -171,7 +175,8 @@
             this.Controls.Add(this.btnCategory);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Transaction";
-            this.Text = "Transaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Transações";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

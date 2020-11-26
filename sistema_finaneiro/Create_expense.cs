@@ -17,12 +17,22 @@ namespace sistema_finaneiro
             InitializeComponent();
         }
 
-        private void lblBalance_Click(object sender, EventArgs e)
+        private void btnCreateExpense_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void lblHeaderExpense_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxNameExpense_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpDateExpense_ValueChanged(object sender, EventArgs e)
         {
 
         }
@@ -30,6 +40,16 @@ namespace sistema_finaneiro
         private void lblValueBalance_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Create_expense_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExpenseReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_category));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbxTypeCategory = new System.Windows.Forms.ComboBox();
             this.lblTypeCategory = new System.Windows.Forms.Label();
             this.lblNameCategory = new System.Windows.Forms.Label();
@@ -49,7 +53,7 @@
             this.cbxTypeCategory.Location = new System.Drawing.Point(277, 148);
             this.cbxTypeCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxTypeCategory.Name = "cbxTypeCategory";
-            this.cbxTypeCategory.Size = new System.Drawing.Size(470, 23);
+            this.cbxTypeCategory.Size = new System.Drawing.Size(470, 21);
             this.cbxTypeCategory.TabIndex = 29;
             // 
             // lblTypeCategory
@@ -57,7 +61,7 @@
             this.lblTypeCategory.AutoSize = true;
             this.lblTypeCategory.Location = new System.Drawing.Point(277, 116);
             this.lblTypeCategory.Name = "lblTypeCategory";
-            this.lblTypeCategory.Size = new System.Drawing.Size(101, 15);
+            this.lblTypeCategory.Size = new System.Drawing.Size(95, 13);
             this.lblTypeCategory.TabIndex = 28;
             this.lblTypeCategory.Text = "Tipos de categoria";
             // 
@@ -66,7 +70,7 @@
             this.lblNameCategory.AutoSize = true;
             this.lblNameCategory.Location = new System.Drawing.Point(277, 30);
             this.lblNameCategory.Name = "lblNameCategory";
-            this.lblNameCategory.Size = new System.Drawing.Size(104, 15);
+            this.lblNameCategory.Size = new System.Drawing.Size(97, 13);
             this.lblNameCategory.TabIndex = 27;
             this.lblNameCategory.Text = "Nome da categoria";
             // 
@@ -75,7 +79,7 @@
             this.txtNameCategory.Location = new System.Drawing.Point(277, 64);
             this.txtNameCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameCategory.Name = "txtNameCategory";
-            this.txtNameCategory.Size = new System.Drawing.Size(470, 22);
+            this.txtNameCategory.Size = new System.Drawing.Size(470, 20);
             this.txtNameCategory.TabIndex = 26;
             // 
             // cbxClassCategory
@@ -84,7 +88,7 @@
             this.cbxClassCategory.Location = new System.Drawing.Point(277, 234);
             this.cbxClassCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxClassCategory.Name = "cbxClassCategory";
-            this.cbxClassCategory.Size = new System.Drawing.Size(470, 23);
+            this.cbxClassCategory.Size = new System.Drawing.Size(470, 21);
             this.cbxClassCategory.TabIndex = 30;
             // 
             // label1
@@ -92,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(277, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 15);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "Classe da categoria";
             // 
@@ -111,6 +115,7 @@
             this.btnReturnCategory.Text = "Voltar";
             this.btnReturnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReturnCategory.UseVisualStyleBackColor = false;
+            this.btnReturnCategory.Click += new System.EventHandler(this.btnReturnCategory_Click);
             // 
             // btnCreateCategory
             // 
@@ -132,7 +137,23 @@
             // dtgListCategoryRecipe
             // 
             this.dtgListCategoryRecipe.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListCategoryRecipe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgListCategoryRecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListCategoryRecipe.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgListCategoryRecipe.Location = new System.Drawing.Point(24, 386);
             this.dtgListCategoryRecipe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgListCategoryRecipe.Name = "dtgListCategoryRecipe";
@@ -142,7 +163,23 @@
             // dtgListCategoryExpense
             // 
             this.dtgListCategoryExpense.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListCategoryExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgListCategoryExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListCategoryExpense.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtgListCategoryExpense.Location = new System.Drawing.Point(536, 386);
             this.dtgListCategoryExpense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtgListCategoryExpense.Name = "dtgListCategoryExpense";
@@ -151,7 +188,7 @@
             // 
             // Create_category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1029, 624);
@@ -165,10 +202,11 @@
             this.Controls.Add(this.lblTypeCategory);
             this.Controls.Add(this.lblNameCategory);
             this.Controls.Add(this.txtNameCategory);
-            this.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Create_category";
-            this.Text = "Create_category";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Categorias";
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryRecipe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryExpense)).EndInit();
             this.ResumeLayout(false);

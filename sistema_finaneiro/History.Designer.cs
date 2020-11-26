@@ -102,6 +102,7 @@
             this.btnReturnHistory.Text = "Voltar";
             this.btnReturnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReturnHistory.UseVisualStyleBackColor = false;
+            this.btnReturnHistory.Click += new System.EventHandler(this.btnReturnHistory_Click);
             // 
             // pictureBox1
             // 
@@ -180,7 +181,8 @@
             this.Controls.Add(this.dtgListCategoryRecipe);
             this.Controls.Add(this.lblHistoryRecipe);
             this.Name = "History";
-            this.Text = "History";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Histórico";
             this.Load += new System.EventHandler(this.History_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryRecipe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryExpense)).EndInit();

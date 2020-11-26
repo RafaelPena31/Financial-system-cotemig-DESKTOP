@@ -26,5 +26,10 @@ namespace sistema_finaneiro
         {
 
         }
+
+        private void btnReturnProfile_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

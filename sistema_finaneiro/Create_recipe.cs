@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace sistema_finaneiro
 {
-    public partial class btnReturnRecipe : Form
+    public partial class frmRecipe : Form
     {
-        public btnReturnRecipe()
+        public frmRecipe()
         {
             InitializeComponent();
         }
@@ -25,6 +25,16 @@ namespace sistema_finaneiro
         private void lblNameRecipe_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmRecipe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecipeReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

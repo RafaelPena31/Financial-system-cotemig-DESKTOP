@@ -52,7 +52,7 @@
             this.btnUserRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUserRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnUserRegister.Image")));
             this.btnUserRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUserRegister.Location = new System.Drawing.Point(533, 312);
+            this.btnUserRegister.Location = new System.Drawing.Point(478, 233);
             this.btnUserRegister.Name = "btnUserRegister";
             this.btnUserRegister.Padding = new System.Windows.Forms.Padding(7, 3, 7, 3);
             this.btnUserRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -69,7 +69,7 @@
             this.btnReturnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnRegister.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnRegister.Image")));
             this.btnReturnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReturnRegister.Location = new System.Drawing.Point(22, 312);
+            this.btnReturnRegister.Location = new System.Drawing.Point(19, 233);
             this.btnReturnRegister.Name = "btnReturnRegister";
             this.btnReturnRegister.Padding = new System.Windows.Forms.Padding(13, 3, 13, 3);
             this.btnReturnRegister.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -84,7 +84,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(19, 233);
+            this.lblPassword.Location = new System.Drawing.Point(19, 152);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(38, 13);
             this.lblPassword.TabIndex = 20;
@@ -94,7 +94,7 @@
             // textPassword
             // 
             this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(22, 261);
+            this.textPassword.Location = new System.Drawing.Point(19, 169);
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(269, 20);
             this.textPassword.TabIndex = 19;
@@ -104,7 +104,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(19, 44);
+            this.lblName.Location = new System.Drawing.Point(19, 49);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(35, 13);
             this.lblName.TabIndex = 18;
@@ -113,7 +113,7 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(22, 73);
+            this.txtName.Location = new System.Drawing.Point(19, 66);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(269, 20);
             this.txtName.TabIndex = 17;
@@ -123,7 +123,7 @@
             // 
             this.lblSex.AutoSize = true;
             this.lblSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSex.Location = new System.Drawing.Point(19, 138);
+            this.lblSex.Location = new System.Drawing.Point(19, 100);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(31, 13);
             this.lblSex.TabIndex = 24;
@@ -138,15 +138,15 @@
             "M",
             "F",
             "O"});
-            this.cbxSex.Location = new System.Drawing.Point(25, 166);
+            this.cbxSex.Location = new System.Drawing.Point(19, 117);
             this.cbxSex.Name = "cbxSex";
-            this.cbxSex.Size = new System.Drawing.Size(266, 21);
+            this.cbxSex.Size = new System.Drawing.Size(269, 21);
             this.cbxSex.TabIndex = 25;
             this.cbxSex.SelectedIndexChanged += new System.EventHandler(this.cbxSex_SelectedIndexChanged);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(383, 73);
+            this.txtEmail.Location = new System.Drawing.Point(328, 66);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(269, 20);
             this.txtEmail.TabIndex = 26;
@@ -156,7 +156,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(383, 44);
+            this.lblEmail.Location = new System.Drawing.Point(328, 49);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 27;
@@ -166,7 +166,7 @@
             // lblAdress
             // 
             this.lblAdress.AutoSize = true;
-            this.lblAdress.Location = new System.Drawing.Point(383, 233);
+            this.lblAdress.Location = new System.Drawing.Point(328, 152);
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(53, 13);
             this.lblAdress.TabIndex = 29;
@@ -174,7 +174,7 @@
             // 
             // txtAdress
             // 
-            this.txtAdress.Location = new System.Drawing.Point(383, 261);
+            this.txtAdress.Location = new System.Drawing.Point(328, 169);
             this.txtAdress.Name = "txtAdress";
             this.txtAdress.Size = new System.Drawing.Size(269, 20);
             this.txtAdress.TabIndex = 28;
@@ -184,7 +184,7 @@
             // 
             this.lblTelephone.AutoSize = true;
             this.lblTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelephone.Location = new System.Drawing.Point(383, 138);
+            this.lblTelephone.Location = new System.Drawing.Point(328, 100);
             this.lblTelephone.Name = "lblTelephone";
             this.lblTelephone.Size = new System.Drawing.Size(49, 13);
             this.lblTelephone.TabIndex = 31;
@@ -193,7 +193,7 @@
             // 
             // mtxtPhone
             // 
-            this.mtxtPhone.Location = new System.Drawing.Point(383, 166);
+            this.mtxtPhone.Location = new System.Drawing.Point(328, 117);
             this.mtxtPhone.Mask = "(99) 00000-0000";
             this.mtxtPhone.Name = "mtxtPhone";
             this.mtxtPhone.Size = new System.Drawing.Size(269, 20);
@@ -205,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(674, 415);
+            this.ClientSize = new System.Drawing.Size(618, 332);
             this.Controls.Add(this.mtxtPhone);
             this.Controls.Add(this.lblTelephone);
             this.Controls.Add(this.lblAdress);
@@ -223,7 +223,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "User_register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "User_register";
+            this.Text = "Cadastro de usuário";
             this.Load += new System.EventHandler(this.User_register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -19,7 +19,6 @@ C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_finan
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Change_profile.resources
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Create_category.resources
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Create_expense.resources
-C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.btnReturnRecipe.resources
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.History.resources
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Profile.resources
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Transaction.resources
@@ -48,3 +47,4 @@ C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_finan
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\bin\Debug\MySql.Data.xml
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.exe.config
 C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.csproj.CopyComplete
+C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.frmRecipe.resources

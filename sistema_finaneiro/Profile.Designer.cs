@@ -226,6 +226,7 @@
             this.btnReturnProfile.Text = "Voltar";
             this.btnReturnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReturnProfile.UseVisualStyleBackColor = false;
+            this.btnReturnProfile.Click += new System.EventHandler(this.btnReturnProfile_Click);
             // 
             // Profile
             // 
@@ -246,7 +247,8 @@
             this.Controls.Add(this.lblValueBalance);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Profile";
-            this.Text = "Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Perfil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

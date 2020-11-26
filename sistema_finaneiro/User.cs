@@ -15,6 +15,11 @@ namespace sistema_finaneiro
         ConexaoBD bd = new ConexaoBD();
         private int UserId = 0;
 
+        public int getUserId()
+        {
+            return this.UserId;
+        }
+
         public bool CreateUser(string sql, string email, string pass)
         {
             try
@@ -51,7 +56,7 @@ namespace sistema_finaneiro
             }
         }
 
-        public DataTable ConsultarDados(string sql)
+        public DataTable DataList(string sql)
         {
             try
             {
@@ -81,7 +86,7 @@ namespace sistema_finaneiro
                 bd.ConectarBD();
                 string sql = string.Format("select id from user where email = '{0}' and password = '{1}'", email, pass);
                 DataTable dt = new DataTable();
-                dt = ConsultarDados(sql);
+                dt = DataList(sql);
 
                 if(dt.Rows.Count > 0)
                 {
@@ -91,6 +96,24 @@ namespace sistema_finaneiro
                 {
                     return false;
                 }
+            } catch
+            {
+                throw;
+            } finally
+            {
+                MySqlConnection connection = bd.getConexao();
+                connection.Close();
+            }
+        }
+
+        public int UpdateData(string sql)
+        {
+            try
+            {
+                MySqlConnection connection = bd.getConexao();
+                bd.ConectarBD();
+                MySqlCommand cmd = new MySqlCommand(sql, connection);
+                return cmd.ExecuteNonQuery();
             } catch
             {
                 throw;
