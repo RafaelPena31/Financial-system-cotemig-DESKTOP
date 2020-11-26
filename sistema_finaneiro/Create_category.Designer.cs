@@ -43,66 +43,75 @@
             this.btnCreateCategory = new System.Windows.Forms.Button();
             this.dtgListCategoryRecipe = new System.Windows.Forms.DataGridView();
             this.dtgListCategoryExpense = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnChangeDataCategory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryRecipe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryExpense)).BeginInit();
             this.SuspendLayout();
             // 
             // cbxTypeCategory
             // 
+            this.cbxTypeCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTypeCategory.FormattingEnabled = true;
             this.cbxTypeCategory.Location = new System.Drawing.Point(277, 148);
             this.cbxTypeCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxTypeCategory.Name = "cbxTypeCategory";
-            this.cbxTypeCategory.Size = new System.Drawing.Size(470, 21);
+            this.cbxTypeCategory.Size = new System.Drawing.Size(494, 23);
             this.cbxTypeCategory.TabIndex = 29;
             // 
             // lblTypeCategory
             // 
             this.lblTypeCategory.AutoSize = true;
+            this.lblTypeCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTypeCategory.Location = new System.Drawing.Point(277, 116);
             this.lblTypeCategory.Name = "lblTypeCategory";
-            this.lblTypeCategory.Size = new System.Drawing.Size(95, 13);
+            this.lblTypeCategory.Size = new System.Drawing.Size(101, 15);
             this.lblTypeCategory.TabIndex = 28;
             this.lblTypeCategory.Text = "Tipos de categoria";
             // 
             // lblNameCategory
             // 
             this.lblNameCategory.AutoSize = true;
+            this.lblNameCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCategory.Location = new System.Drawing.Point(277, 30);
             this.lblNameCategory.Name = "lblNameCategory";
-            this.lblNameCategory.Size = new System.Drawing.Size(97, 13);
+            this.lblNameCategory.Size = new System.Drawing.Size(104, 15);
             this.lblNameCategory.TabIndex = 27;
             this.lblNameCategory.Text = "Nome da categoria";
             // 
             // txtNameCategory
             // 
+            this.txtNameCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameCategory.Location = new System.Drawing.Point(277, 64);
             this.txtNameCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNameCategory.Name = "txtNameCategory";
-            this.txtNameCategory.Size = new System.Drawing.Size(470, 20);
+            this.txtNameCategory.Size = new System.Drawing.Size(494, 22);
             this.txtNameCategory.TabIndex = 26;
             // 
             // cbxClassCategory
             // 
+            this.cbxClassCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxClassCategory.FormattingEnabled = true;
             this.cbxClassCategory.Location = new System.Drawing.Point(277, 234);
             this.cbxClassCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxClassCategory.Name = "cbxClassCategory";
-            this.cbxClassCategory.Size = new System.Drawing.Size(470, 21);
+            this.cbxClassCategory.Size = new System.Drawing.Size(494, 23);
             this.cbxClassCategory.TabIndex = 30;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(277, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 31;
             this.label1.Text = "Classe da categoria";
             // 
             // btnReturnCategory
             // 
             this.btnReturnCategory.BackColor = System.Drawing.Color.White;
+            this.btnReturnCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnCategory.Image")));
             this.btnReturnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReturnCategory.Location = new System.Drawing.Point(277, 281);
@@ -121,9 +130,10 @@
             // 
             this.btnCreateCategory.AutoEllipsis = true;
             this.btnCreateCategory.BackColor = System.Drawing.Color.White;
+            this.btnCreateCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateCategory.Image")));
             this.btnCreateCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreateCategory.Location = new System.Drawing.Point(628, 281);
+            this.btnCreateCategory.Location = new System.Drawing.Point(652, 281);
             this.btnCreateCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCreateCategory.Name = "btnCreateCategory";
             this.btnCreateCategory.Padding = new System.Windows.Forms.Padding(13, 4, 13, 4);
@@ -133,6 +143,7 @@
             this.btnCreateCategory.Text = "Criar";
             this.btnCreateCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCreateCategory.UseVisualStyleBackColor = false;
+            this.btnCreateCategory.Click += new System.EventHandler(this.btnCreateCategory_Click);
             // 
             // dtgListCategoryRecipe
             // 
@@ -186,12 +197,50 @@
             this.dtgListCategoryExpense.Size = new System.Drawing.Size(470, 194);
             this.dtgListCategoryExpense.TabIndex = 35;
             // 
+            // button1
+            // 
+            this.button1.AutoEllipsis = true;
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(402, 281);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(119, 68);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "Deletar Dados";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnChangeDataCategory
+            // 
+            this.btnChangeDataCategory.AutoEllipsis = true;
+            this.btnChangeDataCategory.BackColor = System.Drawing.Color.White;
+            this.btnChangeDataCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeDataCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeDataCategory.Image")));
+            this.btnChangeDataCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnChangeDataCategory.Location = new System.Drawing.Point(527, 281);
+            this.btnChangeDataCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChangeDataCategory.Name = "btnChangeDataCategory";
+            this.btnChangeDataCategory.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChangeDataCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnChangeDataCategory.Size = new System.Drawing.Size(119, 68);
+            this.btnChangeDataCategory.TabIndex = 37;
+            this.btnChangeDataCategory.Text = "Alterar Dados";
+            this.btnChangeDataCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangeDataCategory.UseVisualStyleBackColor = false;
+            // 
             // Create_category
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1029, 624);
+            this.ClientSize = new System.Drawing.Size(1029, 651);
+            this.Controls.Add(this.btnChangeDataCategory);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtgListCategoryExpense);
             this.Controls.Add(this.dtgListCategoryRecipe);
             this.Controls.Add(this.btnCreateCategory);
@@ -207,6 +256,7 @@
             this.Name = "Create_category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias";
+            this.Load += new System.EventHandler(this.Create_category_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryRecipe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgListCategoryExpense)).EndInit();
             this.ResumeLayout(false);
@@ -226,5 +276,7 @@
         private System.Windows.Forms.Button btnCreateCategory;
         private System.Windows.Forms.DataGridView dtgListCategoryRecipe;
         private System.Windows.Forms.DataGridView dtgListCategoryExpense;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChangeDataCategory;
     }
 }

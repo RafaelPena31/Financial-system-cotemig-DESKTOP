@@ -36,5 +36,10 @@ namespace sistema_finaneiro
         {
             this.Close();
         }
+
+        private void dtgListCategoryRecipe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

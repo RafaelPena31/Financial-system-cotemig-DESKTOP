@@ -32,7 +32,7 @@ namespace sistema_finaneiro
 
         private void btnUserChange_Click(object sender, EventArgs e)
         {
-            sql = string.Format("update User set name = '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtName.Text, txtEmail.Text, cbxSex.Text,
+            sql = string.Format("update User set name =s '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtName.Text, txtEmail.Text, cbxSex.Text,
                 txtTelephone.Text, txtAdress.Text, textPassword.Text, UserClass.getUserId());
             UserClass.UpdateData(sql);
             MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -31,5 +31,50 @@ namespace sistema_finaneiro
         {
             this.Close();
         }
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblValueBalance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInstruction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeAdress_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeTelephone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

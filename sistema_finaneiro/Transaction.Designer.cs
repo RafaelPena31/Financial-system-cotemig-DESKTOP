@@ -53,7 +53,7 @@
             // btnExpense
             // 
             this.btnExpense.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpense.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnExpense.Image")));
             this.btnExpense.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnExpense.Location = new System.Drawing.Point(651, 125);
@@ -70,7 +70,7 @@
             // btnRecipe
             // 
             this.btnRecipe.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecipe.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecipe.Image = ((System.Drawing.Image)(resources.GetObject("btnRecipe.Image")));
             this.btnRecipe.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnRecipe.Location = new System.Drawing.Point(447, 125);
@@ -87,7 +87,7 @@
             // btnCategory
             // 
             this.btnCategory.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategory.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
             this.btnCategory.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCategory.Location = new System.Drawing.Point(243, 125);
@@ -105,11 +105,11 @@
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
             this.lblValueBalance.Location = new System.Drawing.Point(480, 64);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
+            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
             this.lblValueBalance.TabIndex = 31;
             this.lblValueBalance.Text = "R$ 00,00";
             this.lblValueBalance.Click += new System.EventHandler(this.label2_Click);
@@ -118,18 +118,18 @@
             // 
             this.lblHeaderBalance.AutoSize = true;
             this.lblHeaderBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderBalance.ForeColor = System.Drawing.Color.White;
             this.lblHeaderBalance.Location = new System.Drawing.Point(490, 29);
             this.lblHeaderBalance.Name = "lblHeaderBalance";
-            this.lblHeaderBalance.Size = new System.Drawing.Size(86, 25);
+            this.lblHeaderBalance.Size = new System.Drawing.Size(80, 28);
             this.lblHeaderBalance.TabIndex = 32;
             this.lblHeaderBalance.Text = "Saldo: ";
             // 
             // btnHistory
             // 
             this.btnHistory.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistory.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnHistory.Location = new System.Drawing.Point(855, 125);
@@ -146,7 +146,7 @@
             // btnProfile
             // 
             this.btnProfile.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnProfile.Location = new System.Drawing.Point(39, 125);

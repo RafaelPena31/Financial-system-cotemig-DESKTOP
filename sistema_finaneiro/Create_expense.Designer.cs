@@ -57,11 +57,11 @@
             // 
             this.lblHeaderExpense.AutoSize = true;
             this.lblHeaderExpense.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderExpense.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderExpense.ForeColor = System.Drawing.Color.White;
             this.lblHeaderExpense.Location = new System.Drawing.Point(158, 35);
             this.lblHeaderExpense.Name = "lblHeaderExpense";
-            this.lblHeaderExpense.Size = new System.Drawing.Size(111, 25);
+            this.lblHeaderExpense.Size = new System.Drawing.Size(104, 28);
             this.lblHeaderExpense.TabIndex = 59;
             this.lblHeaderExpense.Text = "Despesa:";
             this.lblHeaderExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,11 +71,11 @@
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
             this.lblValueBalance.Location = new System.Drawing.Point(160, 74);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
+            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
             this.lblValueBalance.TabIndex = 58;
             this.lblValueBalance.Text = "R$ 00,00";
             this.lblValueBalance.Click += new System.EventHandler(this.lblValueBalance_Click);
@@ -89,18 +89,20 @@
             // 
             // dtpDateExpense
             // 
+            this.dtpDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateExpense.Location = new System.Drawing.Point(79, 286);
             this.dtpDateExpense.Name = "dtpDateExpense";
-            this.dtpDateExpense.Size = new System.Drawing.Size(269, 20);
+            this.dtpDateExpense.Size = new System.Drawing.Size(269, 22);
             this.dtpDateExpense.TabIndex = 64;
             this.dtpDateExpense.ValueChanged += new System.EventHandler(this.dtpDateExpense_ValueChanged);
             // 
             // lblValueExpense
             // 
             this.lblValueExpense.AutoSize = true;
+            this.lblValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueExpense.Location = new System.Drawing.Point(79, 322);
             this.lblValueExpense.Name = "lblValueExpense";
-            this.lblValueExpense.Size = new System.Drawing.Size(81, 13);
+            this.lblValueExpense.Size = new System.Drawing.Size(87, 15);
             this.lblValueExpense.TabIndex = 63;
             this.lblValueExpense.Text = "Valor da receita";
             // 
@@ -116,24 +118,27 @@
             // lblChooseDateExpense
             // 
             this.lblChooseDateExpense.AutoSize = true;
+            this.lblChooseDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChooseDateExpense.Location = new System.Drawing.Point(79, 265);
             this.lblChooseDateExpense.Name = "lblChooseDateExpense";
-            this.lblChooseDateExpense.Size = new System.Drawing.Size(78, 13);
+            this.lblChooseDateExpense.Size = new System.Drawing.Size(81, 15);
             this.lblChooseDateExpense.TabIndex = 61;
             this.lblChooseDateExpense.Text = "Escolha a data";
             // 
             // lblNameExpense
             // 
             this.lblNameExpense.AutoSize = true;
+            this.lblNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameExpense.Location = new System.Drawing.Point(79, 208);
             this.lblNameExpense.Name = "lblNameExpense";
-            this.lblNameExpense.Size = new System.Drawing.Size(93, 13);
+            this.lblNameExpense.Size = new System.Drawing.Size(99, 15);
             this.lblNameExpense.TabIndex = 60;
             this.lblNameExpense.Text = "Nome da despesa";
             // 
             // btnExpenseReturn
             // 
             this.btnExpenseReturn.BackColor = System.Drawing.Color.White;
+            this.btnExpenseReturn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpenseReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnExpenseReturn.Image")));
             this.btnExpenseReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExpenseReturn.Location = new System.Drawing.Point(79, 423);
@@ -151,6 +156,7 @@
             // 
             this.btnCreateExpense.AutoEllipsis = true;
             this.btnCreateExpense.BackColor = System.Drawing.Color.White;
+            this.btnCreateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateExpense.Image")));
             this.btnCreateExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreateExpense.Location = new System.Drawing.Point(229, 423);
