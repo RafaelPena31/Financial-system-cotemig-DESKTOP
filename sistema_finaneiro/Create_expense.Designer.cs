@@ -82,9 +82,10 @@
             // 
             // txtValueExpense
             // 
+            this.txtValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValueExpense.Location = new System.Drawing.Point(79, 344);
             this.txtValueExpense.Name = "txtValueExpense";
-            this.txtValueExpense.Size = new System.Drawing.Size(269, 20);
+            this.txtValueExpense.Size = new System.Drawing.Size(269, 22);
             this.txtValueExpense.TabIndex = 65;
             // 
             // dtpDateExpense
@@ -102,16 +103,17 @@
             this.lblValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueExpense.Location = new System.Drawing.Point(79, 322);
             this.lblValueExpense.Name = "lblValueExpense";
-            this.lblValueExpense.Size = new System.Drawing.Size(87, 15);
+            this.lblValueExpense.Size = new System.Drawing.Size(95, 15);
             this.lblValueExpense.TabIndex = 63;
-            this.lblValueExpense.Text = "Valor da receita";
+            this.lblValueExpense.Text = "Valor da despesa";
             // 
             // cbxNameExpense
             // 
+            this.cbxNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxNameExpense.FormattingEnabled = true;
             this.cbxNameExpense.Location = new System.Drawing.Point(79, 229);
             this.cbxNameExpense.Name = "cbxNameExpense";
-            this.cbxNameExpense.Size = new System.Drawing.Size(269, 21);
+            this.cbxNameExpense.Size = new System.Drawing.Size(269, 23);
             this.cbxNameExpense.TabIndex = 62;
             this.cbxNameExpense.SelectedIndexChanged += new System.EventHandler(this.cbxNameExpense_SelectedIndexChanged);
             // 

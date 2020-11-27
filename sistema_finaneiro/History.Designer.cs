@@ -172,7 +172,7 @@
             // btnChangeRecipeHistory
             // 
             this.btnChangeRecipeHistory.AutoEllipsis = true;
-            this.btnChangeRecipeHistory.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnChangeRecipeHistory.BackColor = System.Drawing.Color.White;
             this.btnChangeRecipeHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeRecipeHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeRecipeHistory.Image")));
             this.btnChangeRecipeHistory.Location = new System.Drawing.Point(757, 243);
@@ -202,7 +202,7 @@
             // btnChangeExpenseHistory
             // 
             this.btnChangeExpenseHistory.AutoEllipsis = true;
-            this.btnChangeExpenseHistory.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnChangeExpenseHistory.BackColor = System.Drawing.Color.White;
             this.btnChangeExpenseHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeExpenseHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeExpenseHistory.Image")));
             this.btnChangeExpenseHistory.Location = new System.Drawing.Point(757, 504);

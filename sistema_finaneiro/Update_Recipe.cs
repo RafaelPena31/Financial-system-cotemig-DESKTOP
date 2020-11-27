@@ -17,6 +17,16 @@ namespace sistema_finaneiro
             InitializeComponent();
         }
 
+        User UserClass = new User();
+        string sql;
+
+        public void limparRecipe()
+        {
+            cbxUpdateNameRecipe.SelectedIndex = -1;
+            dtpUpdateDateRecipe.Value = ''; 
+
+        }
+
         private void Update_Recipe_Load(object sender, EventArgs e)
         {
 

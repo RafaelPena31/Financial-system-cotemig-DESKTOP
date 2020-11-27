@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Change_profile));
             this.lblTelephone = new System.Windows.Forms.Label();
-            this.txtTelephone = new System.Windows.Forms.TextBox();
+            this.txtTelephoneUpdateProfile = new System.Windows.Forms.TextBox();
             this.lblAdress = new System.Windows.Forms.Label();
-            this.txtAdress = new System.Windows.Forms.TextBox();
+            this.txtAdressUpdateProfile = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.cbxSex = new System.Windows.Forms.ComboBox();
+            this.cbxSexUpdateProfile = new System.Windows.Forms.ComboBox();
             this.lblSex = new System.Windows.Forms.Label();
             this.btnUserChange = new System.Windows.Forms.Button();
             this.btnReturnRegister = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.textPassword = new System.Windows.Forms.TextBox();
+            this.textPasswordUpdateProfile = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUpdateNameProfile = new System.Windows.Forms.TextBox();
+            this.txtEmailUpdateProfile = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblTelephone
@@ -57,13 +57,13 @@
             this.lblTelephone.TabIndex = 45;
             this.lblTelephone.Text = "Telefone";
             // 
-            // txtTelephone
+            // txtTelephoneUpdateProfile
             // 
-            this.txtTelephone.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelephone.Location = new System.Drawing.Point(347, 105);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(269, 22);
-            this.txtTelephone.TabIndex = 44;
+            this.txtTelephoneUpdateProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelephoneUpdateProfile.Location = new System.Drawing.Point(347, 105);
+            this.txtTelephoneUpdateProfile.Name = "txtTelephoneUpdateProfile";
+            this.txtTelephoneUpdateProfile.Size = new System.Drawing.Size(269, 22);
+            this.txtTelephoneUpdateProfile.TabIndex = 44;
             // 
             // lblAdress
             // 
@@ -75,13 +75,13 @@
             this.lblAdress.TabIndex = 43;
             this.lblAdress.Text = "Endereço";
             // 
-            // txtAdress
+            // txtAdressUpdateProfile
             // 
-            this.txtAdress.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdress.Location = new System.Drawing.Point(347, 164);
-            this.txtAdress.Name = "txtAdress";
-            this.txtAdress.Size = new System.Drawing.Size(269, 22);
-            this.txtAdress.TabIndex = 42;
+            this.txtAdressUpdateProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdressUpdateProfile.Location = new System.Drawing.Point(347, 164);
+            this.txtAdressUpdateProfile.Name = "txtAdressUpdateProfile";
+            this.txtAdressUpdateProfile.Size = new System.Drawing.Size(269, 22);
+            this.txtAdressUpdateProfile.TabIndex = 42;
             // 
             // lblEmail
             // 
@@ -100,14 +100,14 @@
             this.txtEmail.Size = new System.Drawing.Size(269, 20);
             this.txtEmail.TabIndex = 40;
             // 
-            // cbxSex
+            // cbxSexUpdateProfile
             // 
-            this.cbxSex.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSex.FormattingEnabled = true;
-            this.cbxSex.Location = new System.Drawing.Point(28, 105);
-            this.cbxSex.Name = "cbxSex";
-            this.cbxSex.Size = new System.Drawing.Size(266, 23);
-            this.cbxSex.TabIndex = 39;
+            this.cbxSexUpdateProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxSexUpdateProfile.FormattingEnabled = true;
+            this.cbxSexUpdateProfile.Location = new System.Drawing.Point(28, 105);
+            this.cbxSexUpdateProfile.Name = "cbxSexUpdateProfile";
+            this.cbxSexUpdateProfile.Size = new System.Drawing.Size(266, 23);
+            this.cbxSexUpdateProfile.TabIndex = 39;
             // 
             // lblSex
             // 
@@ -164,13 +164,13 @@
             this.lblPassword.TabIndex = 35;
             this.lblPassword.Text = "Senha";
             // 
-            // textPassword
+            // textPasswordUpdateProfile
             // 
-            this.textPassword.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(28, 164);
-            this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(269, 22);
-            this.textPassword.TabIndex = 34;
+            this.textPasswordUpdateProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textPasswordUpdateProfile.Location = new System.Drawing.Point(28, 164);
+            this.textPasswordUpdateProfile.Name = "textPasswordUpdateProfile";
+            this.textPasswordUpdateProfile.Size = new System.Drawing.Size(269, 22);
+            this.textPasswordUpdateProfile.TabIndex = 34;
             // 
             // lblName
             // 
@@ -190,21 +190,21 @@
             this.txtName.Size = new System.Drawing.Size(269, 20);
             this.txtName.TabIndex = 32;
             // 
-            // textBox1
+            // txtUpdateNameProfile
             // 
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(25, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 22);
-            this.textBox1.TabIndex = 32;
+            this.txtUpdateNameProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateNameProfile.Location = new System.Drawing.Point(25, 52);
+            this.txtUpdateNameProfile.Name = "txtUpdateNameProfile";
+            this.txtUpdateNameProfile.Size = new System.Drawing.Size(269, 22);
+            this.txtUpdateNameProfile.TabIndex = 32;
             // 
-            // textBox2
+            // txtEmailUpdateProfile
             // 
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(347, 52);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 22);
-            this.textBox2.TabIndex = 40;
+            this.txtEmailUpdateProfile.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailUpdateProfile.Location = new System.Drawing.Point(347, 52);
+            this.txtEmailUpdateProfile.Name = "txtEmailUpdateProfile";
+            this.txtEmailUpdateProfile.Size = new System.Drawing.Size(269, 22);
+            this.txtEmailUpdateProfile.TabIndex = 40;
             // 
             // Change_profile
             // 
@@ -212,20 +212,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(646, 344);
             this.Controls.Add(this.lblTelephone);
-            this.Controls.Add(this.txtTelephone);
+            this.Controls.Add(this.txtTelephoneUpdateProfile);
             this.Controls.Add(this.lblAdress);
-            this.Controls.Add(this.txtAdress);
+            this.Controls.Add(this.txtAdressUpdateProfile);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEmailUpdateProfile);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.cbxSex);
+            this.Controls.Add(this.cbxSexUpdateProfile);
             this.Controls.Add(this.lblSex);
             this.Controls.Add(this.btnUserChange);
             this.Controls.Add(this.btnReturnRegister);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.textPassword);
+            this.Controls.Add(this.textPasswordUpdateProfile);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUpdateNameProfile);
             this.Controls.Add(this.txtName);
             this.Name = "Change_profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -239,20 +239,20 @@
         #endregion
 
         private System.Windows.Forms.Label lblTelephone;
-        private System.Windows.Forms.TextBox txtTelephone;
+        private System.Windows.Forms.TextBox txtTelephoneUpdateProfile;
         private System.Windows.Forms.Label lblAdress;
-        private System.Windows.Forms.TextBox txtAdress;
+        private System.Windows.Forms.TextBox txtAdressUpdateProfile;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.ComboBox cbxSex;
+        private System.Windows.Forms.ComboBox cbxSexUpdateProfile;
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Button btnUserChange;
         private System.Windows.Forms.Button btnReturnRegister;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox textPassword;
+        private System.Windows.Forms.TextBox textPasswordUpdateProfile;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUpdateNameProfile;
+        private System.Windows.Forms.TextBox txtEmailUpdateProfile;
     }
 }

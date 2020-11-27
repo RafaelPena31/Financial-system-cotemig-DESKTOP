@@ -57,9 +57,10 @@
             // 
             // txtUpdateValueRecipe
             // 
+            this.txtUpdateValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateValueRecipe.Location = new System.Drawing.Point(44, 174);
             this.txtUpdateValueRecipe.Name = "txtUpdateValueRecipe";
-            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 20);
+            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 22);
             this.txtUpdateValueRecipe.TabIndex = 51;
             this.txtUpdateValueRecipe.TextChanged += new System.EventHandler(this.txtValueRecipe_TextChanged);
             // 
@@ -101,10 +102,11 @@
             // 
             // cbxUpdateNameRecipe
             // 
+            this.cbxUpdateNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUpdateNameRecipe.FormattingEnabled = true;
             this.cbxUpdateNameRecipe.Location = new System.Drawing.Point(44, 59);
             this.cbxUpdateNameRecipe.Name = "cbxUpdateNameRecipe";
-            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 21);
+            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 23);
             this.cbxUpdateNameRecipe.TabIndex = 47;
             this.cbxUpdateNameRecipe.SelectedIndexChanged += new System.EventHandler(this.cbxNameRecipe_SelectedIndexChanged);
             // 
@@ -142,7 +144,7 @@
             this.Controls.Add(this.lblUpdateChooseDateRecipe);
             this.Controls.Add(this.lblUpdateNameRecipe);
             this.Name = "Update_Recipe";
-            this.Text = "Alterar Receita";
+            this.Text = "Editar Receita";
             this.Load += new System.EventHandler(this.Update_Recipe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

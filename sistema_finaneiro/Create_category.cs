@@ -44,7 +44,7 @@ namespace sistema_finaneiro
             sql = string.Format("insert into Category values (null , '{0}', '{1}', '{2}')", 
             txtNameCategory, cbxTypeCategory, cbxClassCategory.Text, UserClass.getUserId());
             UserClass.UpdateData(sql);
-            MessageBox.Show("Categoria criatura com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Categoria criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
  
          }
 

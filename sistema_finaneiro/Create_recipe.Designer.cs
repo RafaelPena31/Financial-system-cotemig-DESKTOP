@@ -73,10 +73,11 @@
             // 
             // cbxNameRecipe
             // 
+            this.cbxNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxNameRecipe.FormattingEnabled = true;
             this.cbxNameRecipe.Location = new System.Drawing.Point(79, 239);
             this.cbxNameRecipe.Name = "cbxNameRecipe";
-            this.cbxNameRecipe.Size = new System.Drawing.Size(269, 21);
+            this.cbxNameRecipe.Size = new System.Drawing.Size(269, 23);
             this.cbxNameRecipe.TabIndex = 37;
             // 
             // lblChooseDateRecipe
@@ -110,9 +111,10 @@
             // 
             // txtValueRecipe
             // 
+            this.txtValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValueRecipe.Location = new System.Drawing.Point(79, 354);
             this.txtValueRecipe.Name = "txtValueRecipe";
-            this.txtValueRecipe.Size = new System.Drawing.Size(269, 20);
+            this.txtValueRecipe.Size = new System.Drawing.Size(269, 22);
             this.txtValueRecipe.TabIndex = 43;
             // 
             // btnRecipeReturn

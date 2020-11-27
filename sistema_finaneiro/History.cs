@@ -17,9 +17,25 @@ namespace sistema_finaneiro
             InitializeComponent();
         }
 
+        User UserClass = new User();
+        string sql;
+
+        public void ListExpense()
+        {
+            sql = "Select * from Registration";
+            dtgListCategoryExpense.DataSource = UserClass.DataList(sql);
+        }
+
+        public void ListRecipe()
+        {
+            sql = "Select * from Registration";
+            dtgListCategoryRecipe.DataSource = UserClass.DataList(sql);
+        }
+
         private void History_Load(object sender, EventArgs e)
         {
-
+            ListExpense();
+            ListRecipe();
         }
 
         private void lblHeaderBalance_Click(object sender, EventArgs e)

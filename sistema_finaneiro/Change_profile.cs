@@ -22,21 +22,20 @@ namespace sistema_finaneiro
 
         public void limpar()
         {
-            txtAdress.Clear();
-            txtEmail.Clear();
-            txtName.Clear();
-            txtTelephone.Clear();
-            textPassword.Clear();
-            cbxSex.SelectedIndex = -1;
+            txtAdressUpdateProfile.Clear();
+            txtEmailUpdateProfile.Clear();
+            txtUpdateNameProfile.Clear();
+            txtTelephoneUpdateProfile.Clear();
+            textPasswordUpdateProfile.Clear();
+            cbxSexUpdateProfile.SelectedIndex = -1;
         }
 
         private void btnUserChange_Click(object sender, EventArgs e)
         {
-            sql = string.Format("update User set name =s '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtName.Text, txtEmail.Text, cbxSex.Text,
-                txtTelephone.Text, txtAdress.Text, textPassword.Text, UserClass.getUserId());
+            sql = string.Format("update User set name =s '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtName.Text, txtEmail.Text, cbxSexUpdateProfile.Text,
+                txtTelephoneUpdateProfile.Text, txtAdressUpdateProfile.Text, textPasswordUpdateProfile.Text, UserClass.getUserId());
             UserClass.UpdateData(sql);
             MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            limpar();
         }
 
         private void Change_profile_Load(object sender, EventArgs e)
@@ -49,10 +48,10 @@ namespace sistema_finaneiro
             {
                 txtName.Text = dt.Rows[0]["name"].ToString();
                 txtEmail.Text = dt.Rows[0]["email"].ToString();
-                cbxSex.Text = dt.Rows[0]["genre"].ToString();
-                txtTelephone.Text = dt.Rows[0]["phone"].ToString();
-                txtAdress.Text = dt.Rows[0]["address"].ToString();
-                textPassword.Text = dt.Rows[0]["password"].ToString();
+                cbxSexUpdateProfile.Text = dt.Rows[0]["genre"].ToString();
+                txtTelephoneUpdateProfile.Text = dt.Rows[0]["phone"].ToString();
+                txtAdressUpdateProfile.Text = dt.Rows[0]["address"].ToString();
+                textPasswordUpdateProfile.Text = dt.Rows[0]["password"].ToString();
             }
         }
 
