@@ -83,3 +83,6 @@ C:\Users\Fred\Documents\sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_f
 C:\Users\Fred\Documents\sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.csproj.CopyComplete
 C:\Users\Fred\Documents\sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.exe
 C:\Users\Fred\Documents\sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.pdb
+C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Update_Expense.resources
+C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\obj\Debug\sistema_finaneiro.Update_Recipe.resources
+C:\Users\rafae\Documents\Project\COTEMIG - Tecnicas de programacao\Sistema_financeiro\sistema_finaneiro\bin\Debug\System.Numerics.Vectors.dll

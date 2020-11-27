@@ -16,10 +16,15 @@ namespace sistema_finaneiro
         {
             InitializeComponent();
         }
+        User UserClass = new User();
+        string sql;
 
-        private void btnCreateExpense_Click(object sender, EventArgs e)
+        private void btnViewData_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void lblHeaderBalance_Click(object sender, EventArgs e)
@@ -44,7 +49,10 @@ namespace sistema_finaneiro
 
         private void btnChangeEmail_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void lblInstruction_Click(object sender, EventArgs e)
@@ -54,27 +62,47 @@ namespace sistema_finaneiro
 
         private void btnChangeName_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnChangeAdress_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnChangeTelephone_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            Change_profile ChangeProfileForm = new Change_profile();
+            ChangeProfileForm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnDeleteAccount_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show("Você tem certeza que gostaria de excluir sua conta? A ação será irreversível!", "Deletar", MessageBoxButtons.YesNo);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                sql = string.Format("delete from User where id = '{0}'", UserClass.getUserId());
+                UserClass.UpdateData(sql);
+                MessageBox.Show("Dados excluidos com sucesso", "Deletado", MessageBoxButtons.OK);
+                Application.Restart();
+                Environment.Exit(0);
+            }
         }
     }
 }

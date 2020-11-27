@@ -97,7 +97,7 @@
             this.btnViewData.Text = "Visualizar dados";
             this.btnViewData.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewData.UseVisualStyleBackColor = false;
-            this.btnViewData.Click += new System.EventHandler(this.btnCreateExpense_Click);
+            this.btnViewData.Click += new System.EventHandler(this.btnViewData_Click);
             // 
             // btnChangeName
             // 

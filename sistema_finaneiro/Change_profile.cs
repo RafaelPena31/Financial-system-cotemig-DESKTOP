@@ -32,8 +32,8 @@ namespace sistema_finaneiro
 
         private void btnUserChange_Click(object sender, EventArgs e)
         {
-            sql = string.Format("update User set name =s '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtName.Text, txtEmail.Text, cbxSexUpdateProfile.Text,
-                txtTelephoneUpdateProfile.Text, txtAdressUpdateProfile.Text, textPasswordUpdateProfile.Text, UserClass.getUserId());
+            sql = string.Format("update User set name = '{0}', email = '{1}', genre = '{2}', phone = '{3}', address = '{4}', password = '{5}' where id = '{6}'", txtUpdateNameProfile.Text,
+                txtEmailUpdateProfile.Text, cbxSexUpdateProfile.Text, txtTelephoneUpdateProfile.Text, txtAdressUpdateProfile.Text, textPasswordUpdateProfile.Text, UserClass.getUserId());
             UserClass.UpdateData(sql);
             MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -46,12 +46,15 @@ namespace sistema_finaneiro
 
             if(dt.Rows.Count > 0)
             {
-                txtName.Text = dt.Rows[0]["name"].ToString();
-                txtEmail.Text = dt.Rows[0]["email"].ToString();
+                txtUpdateNameProfile.Text = dt.Rows[0]["name"].ToString();
+                txtEmailUpdateProfile.Text = dt.Rows[0]["email"].ToString();
                 cbxSexUpdateProfile.Text = dt.Rows[0]["genre"].ToString();
                 txtTelephoneUpdateProfile.Text = dt.Rows[0]["phone"].ToString();
                 txtAdressUpdateProfile.Text = dt.Rows[0]["address"].ToString();
                 textPasswordUpdateProfile.Text = dt.Rows[0]["password"].ToString();
+            } else
+            {
+                MessageBox.Show(UserClass.getUserId().ToString());
             }
         }
 

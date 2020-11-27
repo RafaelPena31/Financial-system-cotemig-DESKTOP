@@ -22,10 +22,16 @@ namespace sistema_finaneiro
 
         private void btnCreateRecipe_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}')",
-            cbxNameRecipe, dtpDateRecipe, txtValueRecipe, UserClass.getUserId());
-            UserClass.UpdateData(sql);
-            MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}, '{3}'')",
+            Double.Parse(txtValueRecipe.Text), dtpDateRecipe.Value.ToShortDateString(), UserClass.getUserId(), cbxNameRecipe.SelectedValue);
+
+            if (UserClass.UpdateData(sql) > 0)
+            {
+                MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else
+            {
+                MessageBox.Show("Não foi possível criar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
       
@@ -37,14 +43,14 @@ namespace sistema_finaneiro
         private void frmRecipe_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            sql = string.Format("select * from Registration where id = '{0}'", UserClass.getUserId());
+            sql = string.Format("Select * from Category where User_id ='{0}' and type = 'D'", UserClass.getUserId());
             dt = UserClass.DataList(sql);
 
             if (dt.Rows.Count > 0)
             {
-                cbxNameRecipe.Text = dt.Rows[0]["name"].ToString();
-                dtpDateRecipe.Text = dt.Rows[0]["date"].ToString();
-                txtValueRecipe.Text = dt.Rows[0]["value"].ToString();
+                cbxNameRecipe.DataSource = dt;
+                cbxNameRecipe.DisplayMember = "name";
+                cbxNameRecipe.ValueMember = "id";
             }
         }
 

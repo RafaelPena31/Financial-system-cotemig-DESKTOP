@@ -16,7 +16,6 @@ namespace sistema_finaneiro
         {
             InitializeComponent();
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -65,6 +64,11 @@ namespace sistema_finaneiro
             History HistoryForm = new History();
             HistoryForm.ShowDialog();
             this.Visible = true;
+        }
+
+        private void Transaction_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

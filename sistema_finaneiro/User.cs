@@ -13,11 +13,11 @@ namespace sistema_finaneiro
     class User
     {
         ConexaoBD bd = new ConexaoBD();
-        private int UserId = 0;
+        private static int UserId;
 
         public int getUserId()
         {
-            return this.UserId;
+            return UserId;
         }
 
         public bool CreateUser(string sql, string email, string pass)
@@ -110,8 +110,8 @@ namespace sistema_finaneiro
         {
             try
             {
-                MySqlConnection connection = bd.getConexao();
                 bd.ConectarBD();
+                MySqlConnection connection = bd.getConexao();
                 MySqlCommand cmd = new MySqlCommand(sql, connection);
                 return cmd.ExecuteNonQuery();
             } catch
