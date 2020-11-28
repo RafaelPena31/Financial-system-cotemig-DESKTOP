@@ -22,8 +22,9 @@ namespace sistema_finaneiro
 
         private void btnCreateExpense_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}, '{3}'')",
-                       Double.Parse(txtValueExpense.Text), dtpDateExpense.Value.ToShortDateString(), UserClass.getUserId(), cbxNameExpense.SelectedValue);
+            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
+            Double.Parse(txtValueExpense.Text), dtpDateExpense.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
+            Convert.ToInt32(cbxNameExpense.SelectedValue.ToString()));
 
             if (UserClass.UpdateData(sql) > 0)
             {
