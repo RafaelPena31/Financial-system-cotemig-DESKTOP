@@ -52,11 +52,11 @@
             // 
             this.lblHistoryRecipe.AutoSize = true;
             this.lblHistoryRecipe.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblHistoryRecipe.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHistoryRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHistoryRecipe.ForeColor = System.Drawing.Color.Black;
             this.lblHistoryRecipe.Location = new System.Drawing.Point(397, 172);
             this.lblHistoryRecipe.Name = "lblHistoryRecipe";
-            this.lblHistoryRecipe.Size = new System.Drawing.Size(105, 28);
+            this.lblHistoryRecipe.Size = new System.Drawing.Size(138, 31);
             this.lblHistoryRecipe.TabIndex = 33;
             this.lblHistoryRecipe.Text = "Receitas:";
             this.lblHistoryRecipe.Click += new System.EventHandler(this.lblHeaderBalance_Click);
@@ -67,6 +67,7 @@
             this.dtgListCategoryRecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgListCategoryRecipe.Location = new System.Drawing.Point(65, 243);
             this.dtgListCategoryRecipe.Name = "dtgListCategoryRecipe";
+            this.dtgListCategoryRecipe.RowHeadersWidth = 51;
             this.dtgListCategoryRecipe.Size = new System.Drawing.Size(686, 168);
             this.dtgListCategoryRecipe.TabIndex = 35;
             this.dtgListCategoryRecipe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgListCategoryRecipe_CellContentClick);
@@ -77,6 +78,7 @@
             this.dtgListCategoryExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgListCategoryExpense.Location = new System.Drawing.Point(78, 504);
             this.dtgListCategoryExpense.Name = "dtgListCategoryExpense";
+            this.dtgListCategoryExpense.RowHeadersWidth = 51;
             this.dtgListCategoryExpense.Size = new System.Drawing.Size(673, 168);
             this.dtgListCategoryExpense.TabIndex = 37;
             // 
@@ -84,18 +86,18 @@
             // 
             this.lblHistoryExpense.AutoSize = true;
             this.lblHistoryExpense.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblHistoryExpense.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHistoryExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHistoryExpense.ForeColor = System.Drawing.Color.Black;
             this.lblHistoryExpense.Location = new System.Drawing.Point(392, 429);
             this.lblHistoryExpense.Name = "lblHistoryExpense";
-            this.lblHistoryExpense.Size = new System.Drawing.Size(114, 28);
+            this.lblHistoryExpense.Size = new System.Drawing.Size(153, 31);
             this.lblHistoryExpense.TabIndex = 36;
             this.lblHistoryExpense.Text = "Despesas:";
             // 
             // btnReturnHistory
             // 
             this.btnReturnHistory.BackColor = System.Drawing.Color.White;
-            this.btnReturnHistory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnHistory.Image")));
             this.btnReturnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReturnHistory.Location = new System.Drawing.Point(75, 687);
@@ -123,11 +125,11 @@
             // 
             this.lblHeaderBalance.AutoSize = true;
             this.lblHeaderBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderBalance.ForeColor = System.Drawing.Color.White;
             this.lblHeaderBalance.Location = new System.Drawing.Point(412, 34);
             this.lblHeaderBalance.Name = "lblHeaderBalance";
-            this.lblHeaderBalance.Size = new System.Drawing.Size(75, 28);
+            this.lblHeaderBalance.Size = new System.Drawing.Size(97, 31);
             this.lblHeaderBalance.TabIndex = 41;
             this.lblHeaderBalance.Text = "Saldo:";
             this.lblHeaderBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,11 +138,11 @@
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
             this.lblValueBalance.Location = new System.Drawing.Point(401, 69);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
+            this.lblValueBalance.Size = new System.Drawing.Size(132, 31);
             this.lblValueBalance.TabIndex = 40;
             this.lblValueBalance.Text = "R$ 00,00";
             // 
@@ -148,11 +150,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(401, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 28);
+            this.label1.Size = new System.Drawing.Size(132, 31);
             this.label1.TabIndex = 42;
             this.label1.Text = "R$ 00,00";
             // 
@@ -160,11 +162,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(401, 457);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 28);
+            this.label2.Size = new System.Drawing.Size(132, 31);
             this.label2.TabIndex = 43;
             this.label2.Text = "R$ 00,00";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -183,6 +185,7 @@
             this.btnChangeRecipeHistory.TabIndex = 51;
             this.btnChangeRecipeHistory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChangeRecipeHistory.UseVisualStyleBackColor = false;
+            this.btnChangeRecipeHistory.Click += new System.EventHandler(this.btnChangeRecipeHistory_Click);
             // 
             // btnDeleteRecipeHistory
             // 
@@ -198,6 +201,7 @@
             this.btnDeleteRecipeHistory.TabIndex = 52;
             this.btnDeleteRecipeHistory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDeleteRecipeHistory.UseVisualStyleBackColor = false;
+            this.btnDeleteRecipeHistory.Click += new System.EventHandler(this.btnDeleteRecipeHistory_Click);
             // 
             // btnChangeExpenseHistory
             // 
@@ -213,6 +217,7 @@
             this.btnChangeExpenseHistory.TabIndex = 53;
             this.btnChangeExpenseHistory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChangeExpenseHistory.UseVisualStyleBackColor = false;
+            this.btnChangeExpenseHistory.Click += new System.EventHandler(this.btnChangeExpenseHistory_Click);
             // 
             // btnDeleteExpenseHistory
             // 
@@ -228,6 +233,7 @@
             this.btnDeleteExpenseHistory.TabIndex = 54;
             this.btnDeleteExpenseHistory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDeleteExpenseHistory.UseVisualStyleBackColor = false;
+            this.btnDeleteExpenseHistory.Click += new System.EventHandler(this.btnDeleteExpenseHistory_Click);
             // 
             // History
             // 
