@@ -22,9 +22,10 @@ namespace sistema_finaneiro
 
         private void btnCreateRecipe_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}, '{3}'')",
-            Double.Parse(txtValueRecipe.Text), dtpDateRecipe.Value.ToShortDateString(), UserClass.getUserId(), cbxNameRecipe.SelectedValue);
-
+            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
+            Double.Parse(txtValueRecipe.Text), dtpDateRecipe.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
+            Convert.ToInt32(cbxNameRecipe.SelectedValue.ToString()));
+            
             if (UserClass.UpdateData(sql) > 0)
             {
                 MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -43,7 +44,7 @@ namespace sistema_finaneiro
         private void frmRecipe_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            sql = string.Format("Select * from Category where User_id ='{0}' and type = 'D'", UserClass.getUserId());
+            sql = string.Format("Select * from Category where User_id ='{0}' and type = 'R'", UserClass.getUserId());
             dt = UserClass.DataList(sql);
 
             if (dt.Rows.Count > 0)
