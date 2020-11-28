@@ -111,7 +111,20 @@ namespace sistema_finaneiro
 
         private void txtCategoryId_TextChanged(object sender, EventArgs e)
         {
+            DataTable dt = new DataTable();
+            if(txtCategoryId.Text != "")
+            {
+                sql = string.Format("select * from Category where id = '{0}' and User_id = '{1}'", int.Parse(txtCategoryId.Text),
+                UserClass.getUserId());
+                dt = UserClass.DataList(sql);
 
+                if (dt.Rows.Count > 0)
+                {
+                    txtNameCategory.Text = dt.Rows[0]["name"].ToString();
+                    cbxClassCategory.Text = dt.Rows[0]["class"].ToString();
+                    cbxTypeCategory.SelectedValue = dt.Rows[0]["type"].ToString();
+                }
+            }
         }
     }
 }
