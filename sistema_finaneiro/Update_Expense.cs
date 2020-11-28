@@ -35,8 +35,8 @@ namespace sistema_finaneiro
             DataTable dt = new DataTable();
             if (txtUpdateExpenseId.Text != "")
             {
-                sql = string.Format("select * from Category where id = '{0}' and User_id = '{1}'", int.Parse(txtUpdateExpenseId.Text),
-                UserClass.getUserId());
+                sql = string.Format("select Category.name, Registration.data, Registration.value from Registration join Category on Category_id = Category.id where Registration.User_id = '{0}' and Registration.id = '{1}'", 
+                    UserClass.getUserId(), int.Parse(txtUpdateExpenseId.Text));
                 dt = UserClass.DataList(sql);
 
                 if (dt.Rows.Count > 0)
@@ -44,6 +44,31 @@ namespace sistema_finaneiro
                     cbxUpdateNameExpense.Text = dt.Rows[0]["name"].ToString();
                     dtpUpdateDateExpense.Text = dt.Rows[0]["data"].ToString();
                     txtUpdateExpenseValue.Text = dt.Rows[0]["value"].ToString();
+                }
+            }
+        }
+
+        private void btnUpdateExpense_Click(object sender, EventArgs e)
+        {
+            sql = string.Format("update Registration set Category_id = '{0}', value = '{1}', data = '{2}' where id ='{3}'", Convert.ToInt32(cbxUpdateNameExpense.SelectedValue.ToString()),
+            Double.Parse(txtUpdateExpenseValue.Text), dtpUpdateDateExpense.Value.ToString("yyyy-MM-dd"), int.Parse(txtUpdateExpenseId.Text));
+            UserClass.UpdateData(sql);
+            MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnDeleteExpense_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Você tem certeza que gostaria de excluir este dado de sua conta? A ação será irreversível!", "Deletar", MessageBoxButtons.YesNo);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                sql = string.Format("delete from Registration where id = '{0}'", int.Parse(txtUpdateExpenseId.Text));
+                if (UserClass.UpdateData(sql) > 0)
+                {
+                    MessageBox.Show("Dados excluidos com sucesso", "Deletado", MessageBoxButtons.OK);
+                    this.Close();
+                } else
+                {
+                    MessageBox.Show("Seus dados não poderam ser excluidos com sucesso. Entre em contato com o suporte.", "Deletado", MessageBoxButtons.OK);
                 }
             }
         }
