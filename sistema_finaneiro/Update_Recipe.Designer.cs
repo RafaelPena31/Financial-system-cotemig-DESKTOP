@@ -37,12 +37,14 @@
             this.cbxUpdateNameRecipe = new System.Windows.Forms.ComboBox();
             this.lblUpdateChooseDateRecipe = new System.Windows.Forms.Label();
             this.lblUpdateNameRecipe = new System.Windows.Forms.Label();
+            this.txtUpdateRecipeId = new System.Windows.Forms.TextBox();
+            this.lblUpdateRecipeId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUptadeRecipeReturn
             // 
             this.btnUptadeRecipeReturn.BackColor = System.Drawing.Color.White;
-            this.btnUptadeRecipeReturn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUptadeRecipeReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUptadeRecipeReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnUptadeRecipeReturn.Image")));
             this.btnUptadeRecipeReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUptadeRecipeReturn.Location = new System.Drawing.Point(44, 279);
@@ -54,22 +56,23 @@
             this.btnUptadeRecipeReturn.Text = "Voltar";
             this.btnUptadeRecipeReturn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUptadeRecipeReturn.UseVisualStyleBackColor = false;
+            this.btnUptadeRecipeReturn.Click += new System.EventHandler(this.btnUptadeRecipeReturn_Click);
             // 
             // txtUpdateValueRecipe
             // 
-            this.txtUpdateValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateValueRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateValueRecipe.Location = new System.Drawing.Point(44, 174);
             this.txtUpdateValueRecipe.Name = "txtUpdateValueRecipe";
-            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 22);
+            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 23);
             this.txtUpdateValueRecipe.TabIndex = 51;
             this.txtUpdateValueRecipe.TextChanged += new System.EventHandler(this.txtValueRecipe_TextChanged);
             // 
             // dtpUpdateDateRecipe
             // 
-            this.dtpUpdateDateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpUpdateDateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpUpdateDateRecipe.Location = new System.Drawing.Point(44, 117);
             this.dtpUpdateDateRecipe.Name = "dtpUpdateDateRecipe";
-            this.dtpUpdateDateRecipe.Size = new System.Drawing.Size(269, 22);
+            this.dtpUpdateDateRecipe.Size = new System.Drawing.Size(269, 23);
             this.dtpUpdateDateRecipe.TabIndex = 50;
             this.dtpUpdateDateRecipe.ValueChanged += new System.EventHandler(this.dtpDateRecipe_ValueChanged);
             // 
@@ -77,7 +80,7 @@
             // 
             this.btnUpdateRecipe.AutoEllipsis = true;
             this.btnUpdateRecipe.BackColor = System.Drawing.Color.White;
-            this.btnUpdateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateRecipe.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateRecipe.Image")));
             this.btnUpdateRecipe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateRecipe.Location = new System.Drawing.Point(194, 279);
@@ -93,48 +96,69 @@
             // lblUpdateValueRecipe
             // 
             this.lblUpdateValueRecipe.AutoSize = true;
-            this.lblUpdateValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateValueRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateValueRecipe.Location = new System.Drawing.Point(44, 152);
             this.lblUpdateValueRecipe.Name = "lblUpdateValueRecipe";
-            this.lblUpdateValueRecipe.Size = new System.Drawing.Size(87, 15);
+            this.lblUpdateValueRecipe.Size = new System.Drawing.Size(108, 17);
             this.lblUpdateValueRecipe.TabIndex = 48;
             this.lblUpdateValueRecipe.Text = "Valor da receita";
             // 
             // cbxUpdateNameRecipe
             // 
-            this.cbxUpdateNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUpdateNameRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUpdateNameRecipe.FormattingEnabled = true;
             this.cbxUpdateNameRecipe.Location = new System.Drawing.Point(44, 59);
             this.cbxUpdateNameRecipe.Name = "cbxUpdateNameRecipe";
-            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 23);
+            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 25);
             this.cbxUpdateNameRecipe.TabIndex = 47;
             this.cbxUpdateNameRecipe.SelectedIndexChanged += new System.EventHandler(this.cbxNameRecipe_SelectedIndexChanged);
             // 
             // lblUpdateChooseDateRecipe
             // 
             this.lblUpdateChooseDateRecipe.AutoSize = true;
-            this.lblUpdateChooseDateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateChooseDateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateChooseDateRecipe.Location = new System.Drawing.Point(44, 96);
             this.lblUpdateChooseDateRecipe.Name = "lblUpdateChooseDateRecipe";
-            this.lblUpdateChooseDateRecipe.Size = new System.Drawing.Size(81, 15);
+            this.lblUpdateChooseDateRecipe.Size = new System.Drawing.Size(102, 17);
             this.lblUpdateChooseDateRecipe.TabIndex = 46;
             this.lblUpdateChooseDateRecipe.Text = "Escolha a data";
             // 
             // lblUpdateNameRecipe
             // 
             this.lblUpdateNameRecipe.AutoSize = true;
-            this.lblUpdateNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateNameRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateNameRecipe.Location = new System.Drawing.Point(44, 38);
             this.lblUpdateNameRecipe.Name = "lblUpdateNameRecipe";
-            this.lblUpdateNameRecipe.Size = new System.Drawing.Size(91, 15);
+            this.lblUpdateNameRecipe.Size = new System.Drawing.Size(112, 17);
             this.lblUpdateNameRecipe.TabIndex = 45;
             this.lblUpdateNameRecipe.Text = "Nome da receita";
+            // 
+            // txtUpdateRecipeId
+            // 
+            this.txtUpdateRecipeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateRecipeId.Location = new System.Drawing.Point(44, 228);
+            this.txtUpdateRecipeId.Name = "txtUpdateRecipeId";
+            this.txtUpdateRecipeId.Size = new System.Drawing.Size(269, 23);
+            this.txtUpdateRecipeId.TabIndex = 53;
+            // 
+            // lblUpdateRecipeId
+            // 
+            this.lblUpdateRecipeId.AutoSize = true;
+            this.lblUpdateRecipeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateRecipeId.Location = new System.Drawing.Point(44, 208);
+            this.lblUpdateRecipeId.Name = "lblUpdateRecipeId";
+            this.lblUpdateRecipeId.Size = new System.Drawing.Size(90, 17);
+            this.lblUpdateRecipeId.TabIndex = 54;
+            this.lblUpdateRecipeId.Text = "Id da receita ";
+            this.lblUpdateRecipeId.Click += new System.EventHandler(this.label1_Click);
             // 
             // Update_Recipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 396);
+            this.Controls.Add(this.lblUpdateRecipeId);
+            this.Controls.Add(this.txtUpdateRecipeId);
             this.Controls.Add(this.btnUptadeRecipeReturn);
             this.Controls.Add(this.txtUpdateValueRecipe);
             this.Controls.Add(this.dtpUpdateDateRecipe);
@@ -144,6 +168,7 @@
             this.Controls.Add(this.lblUpdateChooseDateRecipe);
             this.Controls.Add(this.lblUpdateNameRecipe);
             this.Name = "Update_Recipe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Receita";
             this.Load += new System.EventHandler(this.Update_Recipe_Load);
             this.ResumeLayout(false);
@@ -161,5 +186,7 @@
         private System.Windows.Forms.ComboBox cbxUpdateNameRecipe;
         private System.Windows.Forms.Label lblUpdateChooseDateRecipe;
         private System.Windows.Forms.Label lblUpdateNameRecipe;
+        private System.Windows.Forms.TextBox txtUpdateRecipeId;
+        private System.Windows.Forms.Label lblUpdateRecipeId;
     }
 }
