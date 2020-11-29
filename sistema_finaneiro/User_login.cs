@@ -37,12 +37,22 @@ namespace sistema_finaneiro
 
         private void btn_alterar_Click(object sender, EventArgs e)
         {
-            if(UserClass.Authenticator(txtEmail.Text, textPassword.Text))
+            if (txtEmail.Text != "" && textPassword.Text != "")
             {
-                this.Visible = false;
-                Transaction TransactionForm = new Transaction();
-                TransactionForm.ShowDialog();
-                this.Visible = true;
+                if (UserClass.Authenticator(txtEmail.Text, textPassword.Text))
+                {
+                    this.Visible = false;
+                    Transaction TransactionForm = new Transaction();
+                    TransactionForm.ShowDialog();
+                    this.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("E-mail ou senha incorretos", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            } else
+            {
+                MessageBox.Show("Preencha todos os campos para continuar.", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
