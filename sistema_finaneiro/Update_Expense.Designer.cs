@@ -103,6 +103,7 @@
             this.cbxUpdateNameExpense.Name = "cbxUpdateNameExpense";
             this.cbxUpdateNameExpense.Size = new System.Drawing.Size(269, 21);
             this.cbxUpdateNameExpense.TabIndex = 55;
+            this.cbxUpdateNameExpense.SelectedIndexChanged += new System.EventHandler(this.cbxUpdateNameExpense_SelectedIndexChanged);
             // 
             // lblUpdateChooseDateExpense
             // 
@@ -190,6 +191,7 @@
             this.Name = "Update_Expense";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar despesa";
+            this.Load += new System.EventHandler(this.Update_Expense_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
