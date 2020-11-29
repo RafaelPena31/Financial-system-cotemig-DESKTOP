@@ -77,31 +77,61 @@ namespace sistema_finaneiro
 
          private void btnCreateCategory_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Category values (null , '{0}', '{1}', '{2}', '{3}')", 
-            txtNameCategory.Text, cbxTypeCategory.SelectedValue, cbxClassCategory.Text, UserClass.getUserId());
-            if (UserClass.UpdateData(sql) > 0)
+            if (txtNameCategory.Text != "" && cbxTypeCategory.Text != "" && cbxClassCategory.Text != "")
             {
-                MessageBox.Show("Categoria criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sql = string.Format("insert into Category values (null , '{0}', '{1}', '{2}', '{3}')",
+                txtNameCategory.Text, cbxTypeCategory.SelectedValue, cbxClassCategory.Text, UserClass.getUserId());
+                if (UserClass.UpdateData(sql) > 0)
+                {
+                    MessageBox.Show("Categoria criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível criar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             } else
             {
-                MessageBox.Show("Não foi possível criar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha todos os campos para continuar.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
 
         private void btnChangeDataCategory_Click(object sender, EventArgs e)
         {
-            sql = string.Format("update Category set name = '{0}', type = '{1}', class = '{2}' where id = '{3}' and User_id = '{4}'", txtNameCategory.Text,
-            cbxTypeCategory.SelectedValue.ToString(), cbxClassCategory.Text, int.Parse(txtCategoryId.Text), UserClass.getUserId());
-            UserClass.UpdateData(sql);
-            MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (txtNameCategory.Text != "" && cbxTypeCategory.Text != "" && cbxClassCategory.Text != "" && txtCategoryId.Text != "")
+            {
+                sql = string.Format("update Category set name = '{0}', type = '{1}', class = '{2}' where id = '{3}' and User_id = '{4}'", txtNameCategory.Text,
+                cbxTypeCategory.SelectedValue.ToString(), cbxClassCategory.Text, int.Parse(txtCategoryId.Text), UserClass.getUserId());
+                if (UserClass.UpdateData(sql) > 0)
+                {
+                    MessageBox.Show("Dados atualizados com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível atualizar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            } else
+            {
+                MessageBox.Show("Preencha todos os campos para continuar.", "Alterar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDeleteCategory_Click(object sender, EventArgs e)
         {
-            sql = string.Format("delete from Category where id = '{0}' and User_id = '{1}'", int.Parse(txtCategoryId.Text), UserClass.getUserId());
-            UserClass.UpdateData(sql);
-            MessageBox.Show("Categoria deletada com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if  (txtCategoryId.Text != "")
+            {
+                sql = string.Format("delete from Category where id = '{0}' and User_id = '{1}'", int.Parse(txtCategoryId.Text), UserClass.getUserId());
+                    if (UserClass.UpdateData(sql) > 0)
+                    {
+                        MessageBox.Show("Categoria deletada com sucesso!", "Atualização", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+            } else
+            {
+                MessageBox.Show("Preencha todos os campos para continuar.", "Deletar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void cbxTypeCategory_SelectedIndexChanged(object sender, EventArgs e)

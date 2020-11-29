@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Create_category));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbxTypeCategory = new System.Windows.Forms.ComboBox();
             this.lblTypeCategory = new System.Windows.Forms.Label();
             this.lblNameCategory = new System.Windows.Forms.Label();
@@ -39,7 +43,7 @@
             this.btnCreateCategory = new System.Windows.Forms.Button();
             this.dtgListCategoryRecipe = new System.Windows.Forms.DataGridView();
             this.dtgListCategoryExpense = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDeleteCategory = new System.Windows.Forms.Button();
             this.btnChangeDataCategory = new System.Windows.Forms.Button();
             this.txtCategoryId = new System.Windows.Forms.TextBox();
             this.lblCategoryId = new System.Windows.Forms.Label();
@@ -51,10 +55,10 @@
             // 
             this.cbxTypeCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTypeCategory.FormattingEnabled = true;
-            this.cbxTypeCategory.Location = new System.Drawing.Point(245, 91);
-            this.cbxTypeCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbxTypeCategory.Location = new System.Drawing.Point(184, 70);
+            this.cbxTypeCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxTypeCategory.Name = "cbxTypeCategory";
-            this.cbxTypeCategory.Size = new System.Drawing.Size(558, 25);
+            this.cbxTypeCategory.Size = new System.Drawing.Size(420, 21);
             this.cbxTypeCategory.TabIndex = 29;
             this.cbxTypeCategory.SelectedIndexChanged += new System.EventHandler(this.cbxTypeCategory_SelectedIndexChanged);
             // 
@@ -62,9 +66,10 @@
             // 
             this.lblTypeCategory.AutoSize = true;
             this.lblTypeCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTypeCategory.Location = new System.Drawing.Point(245, 74);
+            this.lblTypeCategory.Location = new System.Drawing.Point(184, 57);
+            this.lblTypeCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTypeCategory.Name = "lblTypeCategory";
-            this.lblTypeCategory.Size = new System.Drawing.Size(126, 17);
+            this.lblTypeCategory.Size = new System.Drawing.Size(95, 13);
             this.lblTypeCategory.TabIndex = 28;
             this.lblTypeCategory.Text = "Tipos de categoria";
             // 
@@ -72,19 +77,20 @@
             // 
             this.lblNameCategory.AutoSize = true;
             this.lblNameCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameCategory.Location = new System.Drawing.Point(245, 18);
+            this.lblNameCategory.Location = new System.Drawing.Point(184, 14);
+            this.lblNameCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameCategory.Name = "lblNameCategory";
-            this.lblNameCategory.Size = new System.Drawing.Size(128, 17);
+            this.lblNameCategory.Size = new System.Drawing.Size(97, 13);
             this.lblNameCategory.TabIndex = 27;
             this.lblNameCategory.Text = "Nome da categoria";
             // 
             // txtNameCategory
             // 
             this.txtNameCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameCategory.Location = new System.Drawing.Point(245, 37);
-            this.txtNameCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNameCategory.Location = new System.Drawing.Point(184, 28);
+            this.txtNameCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNameCategory.Name = "txtNameCategory";
-            this.txtNameCategory.Size = new System.Drawing.Size(558, 23);
+            this.txtNameCategory.Size = new System.Drawing.Size(420, 20);
             this.txtNameCategory.TabIndex = 26;
             // 
             // cbxClassCategory
@@ -99,19 +105,20 @@
             "Transporte ",
             "Vestuário ",
             "Outros"});
-            this.cbxClassCategory.Location = new System.Drawing.Point(245, 147);
-            this.cbxClassCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbxClassCategory.Location = new System.Drawing.Point(184, 112);
+            this.cbxClassCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxClassCategory.Name = "cbxClassCategory";
-            this.cbxClassCategory.Size = new System.Drawing.Size(558, 25);
+            this.cbxClassCategory.Size = new System.Drawing.Size(420, 21);
             this.cbxClassCategory.TabIndex = 30;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(245, 129);
+            this.label1.Location = new System.Drawing.Point(184, 99);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 17);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "Classe da categoria";
             // 
@@ -121,12 +128,12 @@
             this.btnReturnCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnCategory.Image")));
             this.btnReturnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReturnCategory.Location = new System.Drawing.Point(245, 239);
-            this.btnReturnCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReturnCategory.Location = new System.Drawing.Point(184, 183);
+            this.btnReturnCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReturnCategory.Name = "btnReturnCategory";
-            this.btnReturnCategory.Padding = new System.Windows.Forms.Padding(13, 4, 13, 4);
+            this.btnReturnCategory.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.btnReturnCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnReturnCategory.Size = new System.Drawing.Size(130, 68);
+            this.btnReturnCategory.Size = new System.Drawing.Size(98, 52);
             this.btnReturnCategory.TabIndex = 32;
             this.btnReturnCategory.Text = "Voltar";
             this.btnReturnCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,12 +147,12 @@
             this.btnCreateCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateCategory.Image")));
             this.btnCreateCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreateCategory.Location = new System.Drawing.Point(684, 239);
-            this.btnCreateCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCreateCategory.Location = new System.Drawing.Point(513, 183);
+            this.btnCreateCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCreateCategory.Name = "btnCreateCategory";
-            this.btnCreateCategory.Padding = new System.Windows.Forms.Padding(13, 4, 13, 4);
+            this.btnCreateCategory.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.btnCreateCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCreateCategory.Size = new System.Drawing.Size(119, 68);
+            this.btnCreateCategory.Size = new System.Drawing.Size(89, 52);
             this.btnCreateCategory.TabIndex = 33;
             this.btnCreateCategory.Text = "Criar";
             this.btnCreateCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,43 +162,75 @@
             // dtgListCategoryRecipe
             // 
             this.dtgListCategoryRecipe.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListCategoryRecipe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgListCategoryRecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgListCategoryRecipe.Location = new System.Drawing.Point(24, 325);
-            this.dtgListCategoryRecipe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListCategoryRecipe.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgListCategoryRecipe.Location = new System.Drawing.Point(18, 249);
+            this.dtgListCategoryRecipe.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgListCategoryRecipe.Name = "dtgListCategoryRecipe";
             this.dtgListCategoryRecipe.RowHeadersWidth = 51;
-            this.dtgListCategoryRecipe.Size = new System.Drawing.Size(470, 194);
+            this.dtgListCategoryRecipe.Size = new System.Drawing.Size(352, 148);
             this.dtgListCategoryRecipe.TabIndex = 34;
             // 
             // dtgListCategoryExpense
             // 
             this.dtgListCategoryExpense.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgListCategoryExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtgListCategoryExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgListCategoryExpense.Location = new System.Drawing.Point(536, 325);
-            this.dtgListCategoryExpense.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgListCategoryExpense.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgListCategoryExpense.Location = new System.Drawing.Point(402, 249);
+            this.dtgListCategoryExpense.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgListCategoryExpense.Name = "dtgListCategoryExpense";
             this.dtgListCategoryExpense.RowHeadersWidth = 51;
-            this.dtgListCategoryExpense.Size = new System.Drawing.Size(470, 194);
+            this.dtgListCategoryExpense.Size = new System.Drawing.Size(352, 148);
             this.dtgListCategoryExpense.TabIndex = 35;
             // 
-            // button1
+            // btnDeleteCategory
             // 
-            this.button1.AutoEllipsis = true;
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(378, 239);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(150, 68);
-            this.button1.TabIndex = 36;
-            this.button1.Text = "Deletar Dados";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDeleteCategory.AutoEllipsis = true;
+            this.btnDeleteCategory.BackColor = System.Drawing.Color.White;
+            this.btnDeleteCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCategory.Image")));
+            this.btnDeleteCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeleteCategory.Location = new System.Drawing.Point(284, 183);
+            this.btnDeleteCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteCategory.Name = "btnDeleteCategory";
+            this.btnDeleteCategory.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDeleteCategory.Size = new System.Drawing.Size(112, 52);
+            this.btnDeleteCategory.TabIndex = 36;
+            this.btnDeleteCategory.Text = "Deletar Dados";
+            this.btnDeleteCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeleteCategory.UseVisualStyleBackColor = false;
+            this.btnDeleteCategory.Click += new System.EventHandler(this.btnDeleteCategory_Click);
             // 
             // btnChangeDataCategory
             // 
@@ -200,12 +239,12 @@
             this.btnChangeDataCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeDataCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeDataCategory.Image")));
             this.btnChangeDataCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChangeDataCategory.Location = new System.Drawing.Point(531, 239);
-            this.btnChangeDataCategory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChangeDataCategory.Location = new System.Drawing.Point(398, 183);
+            this.btnChangeDataCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnChangeDataCategory.Name = "btnChangeDataCategory";
-            this.btnChangeDataCategory.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChangeDataCategory.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnChangeDataCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnChangeDataCategory.Size = new System.Drawing.Size(150, 68);
+            this.btnChangeDataCategory.Size = new System.Drawing.Size(112, 52);
             this.btnChangeDataCategory.TabIndex = 37;
             this.btnChangeDataCategory.Text = "Alterar Dados";
             this.btnChangeDataCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,32 +253,34 @@
             // 
             // txtCategoryId
             // 
-            this.txtCategoryId.Location = new System.Drawing.Point(245, 206);
+            this.txtCategoryId.Location = new System.Drawing.Point(184, 158);
+            this.txtCategoryId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(558, 23);
+            this.txtCategoryId.Size = new System.Drawing.Size(420, 20);
             this.txtCategoryId.TabIndex = 38;
             this.txtCategoryId.TextChanged += new System.EventHandler(this.txtCategoryId_TextChanged);
             // 
             // lblCategoryId
             // 
             this.lblCategoryId.AutoSize = true;
-            this.lblCategoryId.Location = new System.Drawing.Point(248, 184);
+            this.lblCategoryId.Location = new System.Drawing.Point(186, 141);
+            this.lblCategoryId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoryId.Name = "lblCategoryId";
-            this.lblCategoryId.Size = new System.Drawing.Size(552, 17);
+            this.lblCategoryId.Size = new System.Drawing.Size(410, 13);
             this.lblCategoryId.TabIndex = 39;
             this.lblCategoryId.Text = "Id da categoria (Preencha este campo somente para alterar ou deletar uma categori" +
     "a)";
             // 
             // Create_category
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1029, 532);
+            this.ClientSize = new System.Drawing.Size(772, 407);
             this.Controls.Add(this.lblCategoryId);
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.btnChangeDataCategory);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDeleteCategory);
             this.Controls.Add(this.dtgListCategoryExpense);
             this.Controls.Add(this.dtgListCategoryRecipe);
             this.Controls.Add(this.btnCreateCategory);
@@ -251,7 +292,7 @@
             this.Controls.Add(this.lblNameCategory);
             this.Controls.Add(this.txtNameCategory);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Create_category";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categorias";
@@ -275,7 +316,7 @@
         private System.Windows.Forms.Button btnCreateCategory;
         private System.Windows.Forms.DataGridView dtgListCategoryRecipe;
         private System.Windows.Forms.DataGridView dtgListCategoryExpense;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeleteCategory;
         private System.Windows.Forms.Button btnChangeDataCategory;
         private System.Windows.Forms.TextBox txtCategoryId;
         private System.Windows.Forms.Label lblCategoryId;
