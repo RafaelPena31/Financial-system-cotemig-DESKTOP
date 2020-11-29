@@ -53,49 +53,49 @@
             // 
             // cbxTypeCategory
             // 
-            this.cbxTypeCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTypeCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTypeCategory.FormattingEnabled = true;
-            this.cbxTypeCategory.Location = new System.Drawing.Point(184, 70);
+            this.cbxTypeCategory.Location = new System.Drawing.Point(184, 78);
             this.cbxTypeCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxTypeCategory.Name = "cbxTypeCategory";
-            this.cbxTypeCategory.Size = new System.Drawing.Size(420, 21);
+            this.cbxTypeCategory.Size = new System.Drawing.Size(420, 23);
             this.cbxTypeCategory.TabIndex = 29;
             this.cbxTypeCategory.SelectedIndexChanged += new System.EventHandler(this.cbxTypeCategory_SelectedIndexChanged);
             // 
             // lblTypeCategory
             // 
             this.lblTypeCategory.AutoSize = true;
-            this.lblTypeCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTypeCategory.Location = new System.Drawing.Point(184, 57);
+            this.lblTypeCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTypeCategory.Location = new System.Drawing.Point(184, 59);
             this.lblTypeCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTypeCategory.Name = "lblTypeCategory";
-            this.lblTypeCategory.Size = new System.Drawing.Size(95, 13);
+            this.lblTypeCategory.Size = new System.Drawing.Size(101, 15);
             this.lblTypeCategory.TabIndex = 28;
             this.lblTypeCategory.Text = "Tipos de categoria";
             // 
             // lblNameCategory
             // 
             this.lblNameCategory.AutoSize = true;
-            this.lblNameCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCategory.Location = new System.Drawing.Point(184, 14);
             this.lblNameCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNameCategory.Name = "lblNameCategory";
-            this.lblNameCategory.Size = new System.Drawing.Size(97, 13);
+            this.lblNameCategory.Size = new System.Drawing.Size(104, 15);
             this.lblNameCategory.TabIndex = 27;
             this.lblNameCategory.Text = "Nome da categoria";
             // 
             // txtNameCategory
             // 
-            this.txtNameCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNameCategory.Location = new System.Drawing.Point(184, 28);
+            this.txtNameCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameCategory.Location = new System.Drawing.Point(184, 33);
             this.txtNameCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNameCategory.Name = "txtNameCategory";
-            this.txtNameCategory.Size = new System.Drawing.Size(420, 20);
+            this.txtNameCategory.Size = new System.Drawing.Size(420, 22);
             this.txtNameCategory.TabIndex = 26;
             // 
             // cbxClassCategory
             // 
-            this.cbxClassCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxClassCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxClassCategory.FormattingEnabled = true;
             this.cbxClassCategory.Items.AddRange(new object[] {
             "Alimentação",
@@ -105,30 +105,30 @@
             "Transporte ",
             "Vestuário ",
             "Outros"});
-            this.cbxClassCategory.Location = new System.Drawing.Point(184, 112);
+            this.cbxClassCategory.Location = new System.Drawing.Point(184, 124);
             this.cbxClassCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxClassCategory.Name = "cbxClassCategory";
-            this.cbxClassCategory.Size = new System.Drawing.Size(420, 21);
+            this.cbxClassCategory.Size = new System.Drawing.Size(420, 23);
             this.cbxClassCategory.TabIndex = 30;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(184, 99);
+            this.label1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(184, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 31;
             this.label1.Text = "Classe da categoria";
             // 
             // btnReturnCategory
             // 
             this.btnReturnCategory.BackColor = System.Drawing.Color.White;
-            this.btnReturnCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReturnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnReturnCategory.Image")));
             this.btnReturnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReturnCategory.Location = new System.Drawing.Point(184, 183);
+            this.btnReturnCategory.Location = new System.Drawing.Point(184, 201);
             this.btnReturnCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnReturnCategory.Name = "btnReturnCategory";
             this.btnReturnCategory.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
@@ -144,10 +144,10 @@
             // 
             this.btnCreateCategory.AutoEllipsis = true;
             this.btnCreateCategory.BackColor = System.Drawing.Color.White;
-            this.btnCreateCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateCategory.Image")));
             this.btnCreateCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreateCategory.Location = new System.Drawing.Point(513, 183);
+            this.btnCreateCategory.Location = new System.Drawing.Point(518, 201);
             this.btnCreateCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCreateCategory.Name = "btnCreateCategory";
             this.btnCreateCategory.Padding = new System.Windows.Forms.Padding(10, 3, 10, 3);
@@ -179,7 +179,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgListCategoryRecipe.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgListCategoryRecipe.Location = new System.Drawing.Point(18, 249);
+            this.dtgListCategoryRecipe.Location = new System.Drawing.Point(11, 259);
             this.dtgListCategoryRecipe.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgListCategoryRecipe.Name = "dtgListCategoryRecipe";
             this.dtgListCategoryRecipe.RowHeadersWidth = 51;
@@ -206,7 +206,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgListCategoryExpense.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgListCategoryExpense.Location = new System.Drawing.Point(402, 249);
+            this.dtgListCategoryExpense.Location = new System.Drawing.Point(398, 259);
             this.dtgListCategoryExpense.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dtgListCategoryExpense.Name = "dtgListCategoryExpense";
             this.dtgListCategoryExpense.RowHeadersWidth = 51;
@@ -217,13 +217,13 @@
             // 
             this.btnDeleteCategory.AutoEllipsis = true;
             this.btnDeleteCategory.BackColor = System.Drawing.Color.White;
-            this.btnDeleteCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteCategory.Image")));
             this.btnDeleteCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeleteCategory.Location = new System.Drawing.Point(284, 183);
+            this.btnDeleteCategory.Location = new System.Drawing.Point(286, 201);
             this.btnDeleteCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDeleteCategory.Name = "btnDeleteCategory";
-            this.btnDeleteCategory.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteCategory.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btnDeleteCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDeleteCategory.Size = new System.Drawing.Size(112, 52);
             this.btnDeleteCategory.TabIndex = 36;
@@ -236,13 +236,13 @@
             // 
             this.btnChangeDataCategory.AutoEllipsis = true;
             this.btnChangeDataCategory.BackColor = System.Drawing.Color.White;
-            this.btnChangeDataCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeDataCategory.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeDataCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeDataCategory.Image")));
             this.btnChangeDataCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChangeDataCategory.Location = new System.Drawing.Point(398, 183);
+            this.btnChangeDataCategory.Location = new System.Drawing.Point(402, 201);
             this.btnChangeDataCategory.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnChangeDataCategory.Name = "btnChangeDataCategory";
-            this.btnChangeDataCategory.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnChangeDataCategory.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btnChangeDataCategory.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnChangeDataCategory.Size = new System.Drawing.Size(112, 52);
             this.btnChangeDataCategory.TabIndex = 37;
@@ -253,20 +253,22 @@
             // 
             // txtCategoryId
             // 
-            this.txtCategoryId.Location = new System.Drawing.Point(184, 158);
-            this.txtCategoryId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCategoryId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryId.Location = new System.Drawing.Point(184, 170);
+            this.txtCategoryId.Margin = new System.Windows.Forms.Padding(2);
             this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(420, 20);
+            this.txtCategoryId.Size = new System.Drawing.Size(420, 22);
             this.txtCategoryId.TabIndex = 38;
             this.txtCategoryId.TextChanged += new System.EventHandler(this.txtCategoryId_TextChanged);
             // 
             // lblCategoryId
             // 
             this.lblCategoryId.AutoSize = true;
-            this.lblCategoryId.Location = new System.Drawing.Point(186, 141);
+            this.lblCategoryId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoryId.Location = new System.Drawing.Point(184, 151);
             this.lblCategoryId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoryId.Name = "lblCategoryId";
-            this.lblCategoryId.Size = new System.Drawing.Size(410, 13);
+            this.lblCategoryId.Size = new System.Drawing.Size(444, 15);
             this.lblCategoryId.TabIndex = 39;
             this.lblCategoryId.Text = "Id da categoria (Preencha este campo somente para alterar ou deletar uma categori" +
     "a)";
@@ -276,7 +278,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(772, 407);
+            this.ClientSize = new System.Drawing.Size(772, 419);
             this.Controls.Add(this.lblCategoryId);
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.btnChangeDataCategory);

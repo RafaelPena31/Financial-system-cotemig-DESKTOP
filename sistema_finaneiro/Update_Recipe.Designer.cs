@@ -45,7 +45,7 @@
             // btnUptadeRecipeReturn
             // 
             this.btnUptadeRecipeReturn.BackColor = System.Drawing.Color.White;
-            this.btnUptadeRecipeReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUptadeRecipeReturn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUptadeRecipeReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnUptadeRecipeReturn.Image")));
             this.btnUptadeRecipeReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUptadeRecipeReturn.Location = new System.Drawing.Point(44, 262);
@@ -61,20 +61,20 @@
             // 
             // txtUpdateValueRecipe
             // 
-            this.txtUpdateValueRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateValueRecipe.Location = new System.Drawing.Point(44, 227);
             this.txtUpdateValueRecipe.Name = "txtUpdateValueRecipe";
-            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 20);
+            this.txtUpdateValueRecipe.Size = new System.Drawing.Size(269, 22);
             this.txtUpdateValueRecipe.TabIndex = 51;
             this.txtUpdateValueRecipe.TextChanged += new System.EventHandler(this.txtUpdateValueRecipe_TextChanged);
             // 
             // dtpUpdateDateRecipe
             // 
-            this.dtpUpdateDateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpUpdateDateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpUpdateDateRecipe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpUpdateDateRecipe.Location = new System.Drawing.Point(44, 170);
             this.dtpUpdateDateRecipe.Name = "dtpUpdateDateRecipe";
-            this.dtpUpdateDateRecipe.Size = new System.Drawing.Size(269, 20);
+            this.dtpUpdateDateRecipe.Size = new System.Drawing.Size(269, 22);
             this.dtpUpdateDateRecipe.TabIndex = 50;
             this.dtpUpdateDateRecipe.ValueChanged += new System.EventHandler(this.dtpUpdateDateRecipe_ValueChanged);
             // 
@@ -82,7 +82,7 @@
             // 
             this.btnUpdateRecipe.AutoEllipsis = true;
             this.btnUpdateRecipe.BackColor = System.Drawing.Color.White;
-            this.btnUpdateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateRecipe.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateRecipe.Image")));
             this.btnUpdateRecipe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateRecipe.Location = new System.Drawing.Point(194, 262);
@@ -99,59 +99,59 @@
             // lblUpdateValueRecipe
             // 
             this.lblUpdateValueRecipe.AutoSize = true;
-            this.lblUpdateValueRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateValueRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateValueRecipe.Location = new System.Drawing.Point(44, 205);
             this.lblUpdateValueRecipe.Name = "lblUpdateValueRecipe";
-            this.lblUpdateValueRecipe.Size = new System.Drawing.Size(81, 13);
+            this.lblUpdateValueRecipe.Size = new System.Drawing.Size(87, 15);
             this.lblUpdateValueRecipe.TabIndex = 48;
             this.lblUpdateValueRecipe.Text = "Valor da receita";
             // 
             // cbxUpdateNameRecipe
             // 
-            this.cbxUpdateNameRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUpdateNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUpdateNameRecipe.FormattingEnabled = true;
             this.cbxUpdateNameRecipe.Location = new System.Drawing.Point(44, 112);
             this.cbxUpdateNameRecipe.Name = "cbxUpdateNameRecipe";
-            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 21);
+            this.cbxUpdateNameRecipe.Size = new System.Drawing.Size(269, 23);
             this.cbxUpdateNameRecipe.TabIndex = 47;
             this.cbxUpdateNameRecipe.SelectedIndexChanged += new System.EventHandler(this.cbxUpdateNameRecipe_SelectedIndexChanged);
             // 
             // lblUpdateChooseDateRecipe
             // 
             this.lblUpdateChooseDateRecipe.AutoSize = true;
-            this.lblUpdateChooseDateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateChooseDateRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateChooseDateRecipe.Location = new System.Drawing.Point(44, 149);
             this.lblUpdateChooseDateRecipe.Name = "lblUpdateChooseDateRecipe";
-            this.lblUpdateChooseDateRecipe.Size = new System.Drawing.Size(78, 13);
+            this.lblUpdateChooseDateRecipe.Size = new System.Drawing.Size(81, 15);
             this.lblUpdateChooseDateRecipe.TabIndex = 46;
             this.lblUpdateChooseDateRecipe.Text = "Escolha a data";
             // 
             // lblUpdateNameRecipe
             // 
             this.lblUpdateNameRecipe.AutoSize = true;
-            this.lblUpdateNameRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateNameRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateNameRecipe.Location = new System.Drawing.Point(44, 91);
             this.lblUpdateNameRecipe.Name = "lblUpdateNameRecipe";
-            this.lblUpdateNameRecipe.Size = new System.Drawing.Size(85, 13);
+            this.lblUpdateNameRecipe.Size = new System.Drawing.Size(91, 15);
             this.lblUpdateNameRecipe.TabIndex = 45;
             this.lblUpdateNameRecipe.Text = "Nome da receita";
             // 
             // txtUpdateRecipeId
             // 
-            this.txtUpdateRecipeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateRecipeId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateRecipeId.Location = new System.Drawing.Point(44, 52);
             this.txtUpdateRecipeId.Name = "txtUpdateRecipeId";
-            this.txtUpdateRecipeId.Size = new System.Drawing.Size(269, 20);
+            this.txtUpdateRecipeId.Size = new System.Drawing.Size(269, 22);
             this.txtUpdateRecipeId.TabIndex = 53;
             this.txtUpdateRecipeId.TextChanged += new System.EventHandler(this.txtUpdateRecipeId_TextChanged);
             // 
             // lblUpdateRecipeId
             // 
             this.lblUpdateRecipeId.AutoSize = true;
-            this.lblUpdateRecipeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateRecipeId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateRecipeId.Location = new System.Drawing.Point(44, 32);
             this.lblUpdateRecipeId.Name = "lblUpdateRecipeId";
-            this.lblUpdateRecipeId.Size = new System.Drawing.Size(69, 13);
+            this.lblUpdateRecipeId.Size = new System.Drawing.Size(73, 15);
             this.lblUpdateRecipeId.TabIndex = 54;
             this.lblUpdateRecipeId.Text = "Id da receita ";
             this.lblUpdateRecipeId.Click += new System.EventHandler(this.label1_Click);
@@ -160,13 +160,13 @@
             // 
             this.btnDeleteRecipe.AutoEllipsis = true;
             this.btnDeleteRecipe.BackColor = System.Drawing.Color.White;
-            this.btnDeleteRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteRecipe.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteRecipe.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteRecipe.Image")));
             this.btnDeleteRecipe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeleteRecipe.Location = new System.Drawing.Point(44, 336);
             this.btnDeleteRecipe.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDeleteRecipe.Name = "btnDeleteRecipe";
-            this.btnDeleteRecipe.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteRecipe.Padding = new System.Windows.Forms.Padding(22, 3, 22, 3);
             this.btnDeleteRecipe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDeleteRecipe.Size = new System.Drawing.Size(269, 52);
             this.btnDeleteRecipe.TabIndex = 65;

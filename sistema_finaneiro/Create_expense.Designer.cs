@@ -57,11 +57,11 @@
             // 
             this.lblHeaderExpense.AutoSize = true;
             this.lblHeaderExpense.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeaderExpense.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeaderExpense.ForeColor = System.Drawing.Color.White;
             this.lblHeaderExpense.Location = new System.Drawing.Point(158, 35);
             this.lblHeaderExpense.Name = "lblHeaderExpense";
-            this.lblHeaderExpense.Size = new System.Drawing.Size(111, 25);
+            this.lblHeaderExpense.Size = new System.Drawing.Size(104, 28);
             this.lblHeaderExpense.TabIndex = 59;
             this.lblHeaderExpense.Text = "Despesa:";
             this.lblHeaderExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,74 +71,74 @@
             // 
             this.lblValueBalance.AutoSize = true;
             this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueBalance.Font = new System.Drawing.Font("Open Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
             this.lblValueBalance.Location = new System.Drawing.Point(160, 74);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
+            this.lblValueBalance.Size = new System.Drawing.Size(97, 28);
             this.lblValueBalance.TabIndex = 58;
             this.lblValueBalance.Text = "R$ 00,00";
             this.lblValueBalance.Click += new System.EventHandler(this.lblValueBalance_Click);
             // 
             // dtpDateExpense
             // 
-            this.dtpDateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateExpense.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDateExpense.Location = new System.Drawing.Point(79, 286);
             this.dtpDateExpense.Name = "dtpDateExpense";
-            this.dtpDateExpense.Size = new System.Drawing.Size(269, 20);
+            this.dtpDateExpense.Size = new System.Drawing.Size(269, 22);
             this.dtpDateExpense.TabIndex = 64;
             this.dtpDateExpense.ValueChanged += new System.EventHandler(this.dtpDateExpense_ValueChanged);
             // 
             // lblValueExpense
             // 
             this.lblValueExpense.AutoSize = true;
-            this.lblValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueExpense.Location = new System.Drawing.Point(79, 322);
             this.lblValueExpense.Name = "lblValueExpense";
-            this.lblValueExpense.Size = new System.Drawing.Size(89, 13);
+            this.lblValueExpense.Size = new System.Drawing.Size(95, 15);
             this.lblValueExpense.TabIndex = 63;
             this.lblValueExpense.Text = "Valor da despesa";
             // 
             // cbxNameExpense
             // 
-            this.cbxNameExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxNameExpense.FormattingEnabled = true;
             this.cbxNameExpense.Location = new System.Drawing.Point(79, 229);
             this.cbxNameExpense.Name = "cbxNameExpense";
-            this.cbxNameExpense.Size = new System.Drawing.Size(269, 21);
+            this.cbxNameExpense.Size = new System.Drawing.Size(269, 23);
             this.cbxNameExpense.TabIndex = 62;
             this.cbxNameExpense.SelectedIndexChanged += new System.EventHandler(this.cbxNameExpense_SelectedIndexChanged);
             // 
             // lblChooseDateExpense
             // 
             this.lblChooseDateExpense.AutoSize = true;
-            this.lblChooseDateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChooseDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChooseDateExpense.Location = new System.Drawing.Point(79, 265);
             this.lblChooseDateExpense.Name = "lblChooseDateExpense";
-            this.lblChooseDateExpense.Size = new System.Drawing.Size(78, 13);
+            this.lblChooseDateExpense.Size = new System.Drawing.Size(81, 15);
             this.lblChooseDateExpense.TabIndex = 61;
             this.lblChooseDateExpense.Text = "Escolha a data";
             // 
             // lblNameExpense
             // 
             this.lblNameExpense.AutoSize = true;
-            this.lblNameExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameExpense.Location = new System.Drawing.Point(79, 208);
             this.lblNameExpense.Name = "lblNameExpense";
-            this.lblNameExpense.Size = new System.Drawing.Size(93, 13);
+            this.lblNameExpense.Size = new System.Drawing.Size(99, 15);
             this.lblNameExpense.TabIndex = 60;
             this.lblNameExpense.Text = "Nome da despesa";
             // 
             // btnExpenseReturn
             // 
             this.btnExpenseReturn.BackColor = System.Drawing.Color.White;
-            this.btnExpenseReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpenseReturn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpenseReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnExpenseReturn.Image")));
             this.btnExpenseReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExpenseReturn.Location = new System.Drawing.Point(57, 423);
             this.btnExpenseReturn.Name = "btnExpenseReturn";
-            this.btnExpenseReturn.Padding = new System.Windows.Forms.Padding(13, 3, 13, 3);
+            this.btnExpenseReturn.Padding = new System.Windows.Forms.Padding(19, 3, 19, 3);
             this.btnExpenseReturn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnExpenseReturn.Size = new System.Drawing.Size(150, 68);
             this.btnExpenseReturn.TabIndex = 67;
@@ -151,12 +151,12 @@
             // 
             this.btnCreateExpense.AutoEllipsis = true;
             this.btnCreateExpense.BackColor = System.Drawing.Color.White;
-            this.btnCreateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateExpense.Image")));
             this.btnCreateExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreateExpense.Location = new System.Drawing.Point(219, 423);
             this.btnCreateExpense.Name = "btnCreateExpense";
-            this.btnCreateExpense.Padding = new System.Windows.Forms.Padding(13, 3, 13, 3);
+            this.btnCreateExpense.Padding = new System.Windows.Forms.Padding(19, 3, 19, 3);
             this.btnCreateExpense.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnCreateExpense.Size = new System.Drawing.Size(150, 68);
             this.btnCreateExpense.TabIndex = 66;
@@ -167,10 +167,10 @@
             // 
             // txtValueExpense
             // 
-            this.txtValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValueExpense.Location = new System.Drawing.Point(79, 344);
             this.txtValueExpense.Name = "txtValueExpense";
-            this.txtValueExpense.Size = new System.Drawing.Size(269, 20);
+            this.txtValueExpense.Size = new System.Drawing.Size(269, 22);
             this.txtValueExpense.TabIndex = 65;
             // 
             // Create_expense

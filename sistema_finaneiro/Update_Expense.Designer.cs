@@ -45,7 +45,7 @@
             // btnUptadeExpenseReturn
             // 
             this.btnUptadeExpenseReturn.BackColor = System.Drawing.Color.White;
-            this.btnUptadeExpenseReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUptadeExpenseReturn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUptadeExpenseReturn.Image = ((System.Drawing.Image)(resources.GetObject("btnUptadeExpenseReturn.Image")));
             this.btnUptadeExpenseReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUptadeExpenseReturn.Location = new System.Drawing.Point(43, 270);
@@ -61,18 +61,18 @@
             // 
             // dtpUpdateDateExpense
             // 
-            this.dtpUpdateDateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpUpdateDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpUpdateDateExpense.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpUpdateDateExpense.Location = new System.Drawing.Point(43, 176);
             this.dtpUpdateDateExpense.Name = "dtpUpdateDateExpense";
-            this.dtpUpdateDateExpense.Size = new System.Drawing.Size(269, 20);
+            this.dtpUpdateDateExpense.Size = new System.Drawing.Size(269, 22);
             this.dtpUpdateDateExpense.TabIndex = 58;
             // 
             // btnUpdateExpense
             // 
             this.btnUpdateExpense.AutoEllipsis = true;
             this.btnUpdateExpense.BackColor = System.Drawing.Color.White;
-            this.btnUpdateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdateExpense.Image")));
             this.btnUpdateExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnUpdateExpense.Location = new System.Drawing.Point(195, 270);
@@ -89,66 +89,67 @@
             // lblUpdateValueExpense
             // 
             this.lblUpdateValueExpense.AutoSize = true;
-            this.lblUpdateValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateValueExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateValueExpense.Location = new System.Drawing.Point(43, 211);
             this.lblUpdateValueExpense.Name = "lblUpdateValueExpense";
-            this.lblUpdateValueExpense.Size = new System.Drawing.Size(89, 13);
+            this.lblUpdateValueExpense.Size = new System.Drawing.Size(95, 15);
             this.lblUpdateValueExpense.TabIndex = 56;
             this.lblUpdateValueExpense.Text = "Valor da despesa";
             // 
             // cbxUpdateNameExpense
             // 
+            this.cbxUpdateNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxUpdateNameExpense.FormattingEnabled = true;
             this.cbxUpdateNameExpense.Location = new System.Drawing.Point(43, 118);
             this.cbxUpdateNameExpense.Name = "cbxUpdateNameExpense";
-            this.cbxUpdateNameExpense.Size = new System.Drawing.Size(269, 21);
+            this.cbxUpdateNameExpense.Size = new System.Drawing.Size(269, 23);
             this.cbxUpdateNameExpense.TabIndex = 55;
             this.cbxUpdateNameExpense.SelectedIndexChanged += new System.EventHandler(this.cbxUpdateNameExpense_SelectedIndexChanged);
             // 
             // lblUpdateChooseDateExpense
             // 
             this.lblUpdateChooseDateExpense.AutoSize = true;
-            this.lblUpdateChooseDateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateChooseDateExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateChooseDateExpense.Location = new System.Drawing.Point(43, 155);
             this.lblUpdateChooseDateExpense.Name = "lblUpdateChooseDateExpense";
-            this.lblUpdateChooseDateExpense.Size = new System.Drawing.Size(78, 13);
+            this.lblUpdateChooseDateExpense.Size = new System.Drawing.Size(81, 15);
             this.lblUpdateChooseDateExpense.TabIndex = 54;
             this.lblUpdateChooseDateExpense.Text = "Escolha a data";
             // 
             // lblUpdateNameExpense
             // 
             this.lblUpdateNameExpense.AutoSize = true;
-            this.lblUpdateNameExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateNameExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateNameExpense.Location = new System.Drawing.Point(43, 97);
             this.lblUpdateNameExpense.Name = "lblUpdateNameExpense";
-            this.lblUpdateNameExpense.Size = new System.Drawing.Size(85, 13);
+            this.lblUpdateNameExpense.Size = new System.Drawing.Size(91, 15);
             this.lblUpdateNameExpense.TabIndex = 53;
             this.lblUpdateNameExpense.Text = "Nome da receita";
             // 
             // txtUpdateExpenseId
             // 
-            this.txtUpdateExpenseId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateExpenseId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateExpenseId.Location = new System.Drawing.Point(43, 63);
             this.txtUpdateExpenseId.Name = "txtUpdateExpenseId";
-            this.txtUpdateExpenseId.Size = new System.Drawing.Size(269, 20);
+            this.txtUpdateExpenseId.Size = new System.Drawing.Size(269, 22);
             this.txtUpdateExpenseId.TabIndex = 61;
             this.txtUpdateExpenseId.TextChanged += new System.EventHandler(this.txtUpdateExpenseId_TextChanged);
             // 
             // txtUpdateExpenseValue
             // 
-            this.txtUpdateExpenseValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUpdateExpenseValue.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUpdateExpenseValue.Location = new System.Drawing.Point(45, 232);
             this.txtUpdateExpenseValue.Name = "txtUpdateExpenseValue";
-            this.txtUpdateExpenseValue.Size = new System.Drawing.Size(269, 20);
+            this.txtUpdateExpenseValue.Size = new System.Drawing.Size(269, 22);
             this.txtUpdateExpenseValue.TabIndex = 62;
             // 
             // lblUpdateExpenseId
             // 
             this.lblUpdateExpenseId.AutoSize = true;
-            this.lblUpdateExpenseId.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateExpenseId.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateExpenseId.Location = new System.Drawing.Point(40, 43);
             this.lblUpdateExpenseId.Name = "lblUpdateExpenseId";
-            this.lblUpdateExpenseId.Size = new System.Drawing.Size(74, 13);
+            this.lblUpdateExpenseId.Size = new System.Drawing.Size(78, 15);
             this.lblUpdateExpenseId.TabIndex = 63;
             this.lblUpdateExpenseId.Text = "Id da despesa";
             this.lblUpdateExpenseId.Click += new System.EventHandler(this.lblUpdateExpenseId_Click);
@@ -157,13 +158,13 @@
             // 
             this.btnDeleteExpense.AutoEllipsis = true;
             this.btnDeleteExpense.BackColor = System.Drawing.Color.White;
-            this.btnDeleteExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteExpense.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteExpense.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteExpense.Image")));
             this.btnDeleteExpense.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeleteExpense.Location = new System.Drawing.Point(43, 344);
             this.btnDeleteExpense.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDeleteExpense.Name = "btnDeleteExpense";
-            this.btnDeleteExpense.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnDeleteExpense.Padding = new System.Windows.Forms.Padding(22, 3, 22, 3);
             this.btnDeleteExpense.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnDeleteExpense.Size = new System.Drawing.Size(271, 52);
             this.btnDeleteExpense.TabIndex = 64;
