@@ -40,6 +40,11 @@ namespace sistema_finaneiro
         {
             ListExpense();
             ListRecipe();
+            sql = string.Format("select * from User where id = '{0}'", UserClass.getUserId());
+            DataTable dt = UserClass.DataList(sql);
+            lblValueBalance.Text = "R$ " + dt.Rows[0]["balance"].ToString();
+            lblValueExpenseHistory.Text = "R$ " + dt.Rows[0]["expense"].ToString();
+            lblValueRecipeHistory.Text = "R$ " + dt.Rows[0]["recipe"].ToString();
         }
 
         private void lblHeaderBalance_Click(object sender, EventArgs e)
@@ -67,6 +72,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Update_Recipe UpdateRecipeForm = new Update_Recipe();
             UpdateRecipeForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -75,6 +81,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Update_Recipe UpdateRecipeForm = new Update_Recipe();
             UpdateRecipeForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -83,6 +90,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Update_Expense UpdateExpenseForm = new Update_Expense();
             UpdateExpenseForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -91,6 +99,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Update_Expense UpdateExpenseForm = new Update_Expense();
             UpdateExpenseForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
     }
