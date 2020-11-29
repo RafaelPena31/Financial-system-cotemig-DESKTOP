@@ -71,6 +71,7 @@
             // dtpUpdateDateRecipe
             // 
             this.dtpUpdateDateRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpUpdateDateRecipe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpUpdateDateRecipe.Location = new System.Drawing.Point(44, 170);
             this.dtpUpdateDateRecipe.Name = "dtpUpdateDateRecipe";
             this.dtpUpdateDateRecipe.Size = new System.Drawing.Size(269, 20);
