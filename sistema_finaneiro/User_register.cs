@@ -20,8 +20,22 @@ namespace sistema_finaneiro
         User UserClass = new User();
         string sql;
 
+        public void CbxList()
+        {
+            DataTable cbxItemList = new DataTable();
+            cbxItemList.Columns.Add("name", typeof(string));
+            cbxItemList.Columns.Add("value", typeof(string));
+            cbxItemList.Rows.Add("Masculino", "M");
+            cbxItemList.Rows.Add("Feminino", "F");
+            cbxItemList.Rows.Add("Outro", "O");
+
+            cbxSex.DataSource = cbxItemList;
+            cbxSex.DisplayMember = "name";
+            cbxSex.ValueMember = "value";
+        }
         private void User_register_Load(object sender, EventArgs e)
         {
+            CbxList();
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -66,16 +80,29 @@ namespace sistema_finaneiro
 
         private void btn_userregister_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into user values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')",txtName.Text,cbxSex.Text,txtEmail.Text,txtAdress.Text,mtxtPhone.Text,
-                textPassword.Text, 0, 0, 0);
-            if (UserClass.CreateUser(sql, txtEmail.Text, textPassword.Text))
+            if (txtName.Text != "" && cbxSex.Text != "" && txtEmail.Text != "" && txtAdress.Text != "" && mtxtPhone.Text != "" && textPassword.Text != "")
             {
-                this.Visible = false;
-                Transaction TransactionForm = new Transaction();
-                TransactionForm.ShowDialog();
-                this.Visible = true;
+                sql = string.Format("select id from User where email = '{0}'", txtEmail.Text);
+                if (UserClass.DataList(sql).Rows.Count == 0)
+                {
+                    sql = string.Format("insert into user values(null, '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')", txtName.Text, cbxSex.SelectedValue.ToString(), txtEmail.Text, txtAdress.Text, mtxtPhone.Text,
+                    textPassword.Text, 0, 0, 0);
+                    if (UserClass.CreateUser(sql, txtEmail.Text, textPassword.Text))
+                    {
+                        this.Visible = false;
+                        Transaction TransactionForm = new Transaction();
+                        TransactionForm.ShowDialog();
+                        this.Visible = true;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Já existe uma conta utilizando este e-mail, escolha outro.", "Criação de conta", MessageBoxButtons.OK);
+                }
+            } else
+            {
+                MessageBox.Show("Preencha todos os campos para continuar.", "Criação de conta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
