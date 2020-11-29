@@ -24,6 +24,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -39,7 +40,9 @@ namespace sistema_finaneiro
 
         private void Profile_Load(object sender, EventArgs e)
         {
-
+            sql = string.Format("select * from User where id = '{0}'", UserClass.getUserId());
+            DataTable dt = UserClass.DataList(sql);
+            lblValueBalance.Text = "R$ " + dt.Rows[0]["balance"].ToString();
         }
 
         private void lblValueBalance_Click(object sender, EventArgs e)
@@ -52,6 +55,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -65,6 +69,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -73,6 +78,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -81,6 +87,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -89,6 +96,7 @@ namespace sistema_finaneiro
             this.Visible = false;
             Change_profile ChangeProfileForm = new Change_profile();
             ChangeProfileForm.ShowDialog();
+            this.Close();
             this.Visible = true;
         }
 
@@ -97,9 +105,14 @@ namespace sistema_finaneiro
             DialogResult result = MessageBox.Show("Você tem certeza que gostaria de excluir sua conta? A ação será irreversível!", "Deletar", MessageBoxButtons.YesNo);
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
+                sql = string.Format("delete from Registration where User_id = '{0}'", UserClass.getUserId());
+                UserClass.UpdateData(sql);
+                sql = string.Format("delete from Category where User_id = '{0}'", UserClass.getUserId());
+                UserClass.UpdateData(sql);
                 sql = string.Format("delete from User where id = '{0}'", UserClass.getUserId());
                 UserClass.UpdateData(sql);
                 MessageBox.Show("Dados excluidos com sucesso", "Deletado", MessageBoxButtons.OK);
+                this.Close();
                 Application.Restart();
                 Environment.Exit(0);
             }
