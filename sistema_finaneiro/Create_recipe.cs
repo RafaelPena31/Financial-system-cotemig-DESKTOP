@@ -22,16 +22,34 @@ namespace sistema_finaneiro
 
         private void btnCreateRecipe_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
-            Double.Parse(txtValueRecipe.Text), dtpDateRecipe.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
-            Convert.ToInt32(cbxNameRecipe.SelectedValue.ToString()));
-            
-            if (UserClass.UpdateData(sql) > 0)
+            if  (cbxNameRecipe.Text != "" && dtpDateRecipe.Text != "" && txtValueRecipe.Text != "")
             {
-                MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
+                sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
+                txtValueRecipe.Text.Replace(',', '.'), dtpDateRecipe.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
+                Convert.ToInt32(cbxNameRecipe.SelectedValue.ToString()));
+
+                if (UserClass.UpdateData(sql) > 0)
+                    {
+                        sql = string.Format("update User set recipe = recipe + '{0}', balance = balance + '{1}' where id = '{2}'", txtValueRecipe.Text.Replace(',', '.'),
+                    txtValueRecipe.Text.Replace(',', '.'), UserClass.getUserId());
+                        if  (UserClass.UpdateData(sql) > 0)
+                        {
+                            MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Não foi possível adicionar a receita. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                else
+                    {
+                        MessageBox.Show("Não foi possível adicionar a receita. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+            }
+            else
             {
-                MessageBox.Show("Não foi possível criar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha todos os campos para continuar.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -53,6 +71,10 @@ namespace sistema_finaneiro
                 cbxNameRecipe.DisplayMember = "name";
                 cbxNameRecipe.ValueMember = "id";
             }
+
+            sql = string.Format("select * from User where id = '{0}'", UserClass.getUserId());
+            dt = UserClass.DataList(sql);
+            lblValueBalance.Text = "R$ " + dt.Rows[0]["recipe"].ToString();
         }
 
         private void btnRecipeReturn_Click(object sender, EventArgs e)
