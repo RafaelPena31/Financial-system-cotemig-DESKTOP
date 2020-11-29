@@ -16,10 +16,8 @@ namespace sistema_finaneiro
         {
             InitializeComponent();
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        User UserClass = new User();
+        string sql;
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -67,6 +65,11 @@ namespace sistema_finaneiro
         }
 
         private void Transaction_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHeader_Click(object sender, EventArgs e)
         {
 
         }

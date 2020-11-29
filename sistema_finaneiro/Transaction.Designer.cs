@@ -33,10 +33,9 @@
             this.btnExpense = new System.Windows.Forms.Button();
             this.btnRecipe = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
-            this.lblValueBalance = new System.Windows.Forms.Label();
-            this.lblHeaderBalance = new System.Windows.Forms.Label();
             this.btnHistory = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
+            this.lblHeader = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,31 +100,6 @@
             this.btnCategory.UseVisualStyleBackColor = false;
             this.btnCategory.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // lblValueBalance
-            // 
-            this.lblValueBalance.AutoSize = true;
-            this.lblValueBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblValueBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValueBalance.ForeColor = System.Drawing.Color.White;
-            this.lblValueBalance.Location = new System.Drawing.Point(480, 64);
-            this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
-            this.lblValueBalance.TabIndex = 31;
-            this.lblValueBalance.Text = "R$ 00,00";
-            this.lblValueBalance.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // lblHeaderBalance
-            // 
-            this.lblHeaderBalance.AutoSize = true;
-            this.lblHeaderBalance.BackColor = System.Drawing.Color.DodgerBlue;
-            this.lblHeaderBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeaderBalance.ForeColor = System.Drawing.Color.White;
-            this.lblHeaderBalance.Location = new System.Drawing.Point(490, 29);
-            this.lblHeaderBalance.Name = "lblHeaderBalance";
-            this.lblHeaderBalance.Size = new System.Drawing.Size(86, 25);
-            this.lblHeaderBalance.TabIndex = 32;
-            this.lblHeaderBalance.Text = "Saldo: ";
-            // 
             // btnHistory
             // 
             this.btnHistory.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -160,6 +134,19 @@
             this.btnProfile.UseVisualStyleBackColor = false;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(442, 29);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(174, 25);
+            this.lblHeader.TabIndex = 32;
+            this.lblHeader.Text = "Seja bem vindo";
+            this.lblHeader.Click += new System.EventHandler(this.lblHeader_Click);
+            // 
             // Transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,8 +155,7 @@
             this.ClientSize = new System.Drawing.Size(1059, 367);
             this.Controls.Add(this.btnHistory);
             this.Controls.Add(this.btnProfile);
-            this.Controls.Add(this.lblHeaderBalance);
-            this.Controls.Add(this.lblValueBalance);
+            this.Controls.Add(this.lblHeader);
             this.Controls.Add(this.btnExpense);
             this.Controls.Add(this.btnRecipe);
             this.Controls.Add(this.btnCategory);
@@ -190,9 +176,8 @@
         private System.Windows.Forms.Button btnExpense;
         private System.Windows.Forms.Button btnRecipe;
         private System.Windows.Forms.Button btnCategory;
-        private System.Windows.Forms.Label lblValueBalance;
-        private System.Windows.Forms.Label lblHeaderBalance;
         private System.Windows.Forms.Button btnHistory;
         private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Label lblHeader;
     }
 }
