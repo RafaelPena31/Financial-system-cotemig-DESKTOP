@@ -32,7 +32,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHeaderExpense = new System.Windows.Forms.Label();
             this.lblValueBalance = new System.Windows.Forms.Label();
-            this.txtValueExpense = new System.Windows.Forms.TextBox();
             this.dtpDateExpense = new System.Windows.Forms.DateTimePicker();
             this.lblValueExpense = new System.Windows.Forms.Label();
             this.cbxNameExpense = new System.Windows.Forms.ComboBox();
@@ -40,6 +39,7 @@
             this.lblNameExpense = new System.Windows.Forms.Label();
             this.btnExpenseReturn = new System.Windows.Forms.Button();
             this.btnCreateExpense = new System.Windows.Forms.Button();
+            this.txtValueExpense = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.lblHeaderExpense.ForeColor = System.Drawing.Color.White;
             this.lblHeaderExpense.Location = new System.Drawing.Point(158, 35);
             this.lblHeaderExpense.Name = "lblHeaderExpense";
-            this.lblHeaderExpense.Size = new System.Drawing.Size(138, 31);
+            this.lblHeaderExpense.Size = new System.Drawing.Size(111, 25);
             this.lblHeaderExpense.TabIndex = 59;
             this.lblHeaderExpense.Text = "Despesa:";
             this.lblHeaderExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,18 +75,10 @@
             this.lblValueBalance.ForeColor = System.Drawing.Color.White;
             this.lblValueBalance.Location = new System.Drawing.Point(160, 74);
             this.lblValueBalance.Name = "lblValueBalance";
-            this.lblValueBalance.Size = new System.Drawing.Size(132, 31);
+            this.lblValueBalance.Size = new System.Drawing.Size(107, 25);
             this.lblValueBalance.TabIndex = 58;
             this.lblValueBalance.Text = "R$ 00,00";
             this.lblValueBalance.Click += new System.EventHandler(this.lblValueBalance_Click);
-            // 
-            // txtValueExpense
-            // 
-            this.txtValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValueExpense.Location = new System.Drawing.Point(79, 344);
-            this.txtValueExpense.Name = "txtValueExpense";
-            this.txtValueExpense.Size = new System.Drawing.Size(269, 23);
-            this.txtValueExpense.TabIndex = 65;
             // 
             // dtpDateExpense
             // 
@@ -94,7 +86,7 @@
             this.dtpDateExpense.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDateExpense.Location = new System.Drawing.Point(79, 286);
             this.dtpDateExpense.Name = "dtpDateExpense";
-            this.dtpDateExpense.Size = new System.Drawing.Size(269, 23);
+            this.dtpDateExpense.Size = new System.Drawing.Size(269, 20);
             this.dtpDateExpense.TabIndex = 64;
             this.dtpDateExpense.ValueChanged += new System.EventHandler(this.dtpDateExpense_ValueChanged);
             // 
@@ -104,7 +96,7 @@
             this.lblValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValueExpense.Location = new System.Drawing.Point(79, 322);
             this.lblValueExpense.Name = "lblValueExpense";
-            this.lblValueExpense.Size = new System.Drawing.Size(119, 17);
+            this.lblValueExpense.Size = new System.Drawing.Size(89, 13);
             this.lblValueExpense.TabIndex = 63;
             this.lblValueExpense.Text = "Valor da despesa";
             // 
@@ -114,7 +106,7 @@
             this.cbxNameExpense.FormattingEnabled = true;
             this.cbxNameExpense.Location = new System.Drawing.Point(79, 229);
             this.cbxNameExpense.Name = "cbxNameExpense";
-            this.cbxNameExpense.Size = new System.Drawing.Size(269, 25);
+            this.cbxNameExpense.Size = new System.Drawing.Size(269, 21);
             this.cbxNameExpense.TabIndex = 62;
             this.cbxNameExpense.SelectedIndexChanged += new System.EventHandler(this.cbxNameExpense_SelectedIndexChanged);
             // 
@@ -124,7 +116,7 @@
             this.lblChooseDateExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChooseDateExpense.Location = new System.Drawing.Point(79, 265);
             this.lblChooseDateExpense.Name = "lblChooseDateExpense";
-            this.lblChooseDateExpense.Size = new System.Drawing.Size(102, 17);
+            this.lblChooseDateExpense.Size = new System.Drawing.Size(78, 13);
             this.lblChooseDateExpense.TabIndex = 61;
             this.lblChooseDateExpense.Text = "Escolha a data";
             // 
@@ -134,7 +126,7 @@
             this.lblNameExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameExpense.Location = new System.Drawing.Point(79, 208);
             this.lblNameExpense.Name = "lblNameExpense";
-            this.lblNameExpense.Size = new System.Drawing.Size(123, 17);
+            this.lblNameExpense.Size = new System.Drawing.Size(93, 13);
             this.lblNameExpense.TabIndex = 60;
             this.lblNameExpense.Text = "Nome da despesa";
             // 
@@ -173,6 +165,14 @@
             this.btnCreateExpense.UseVisualStyleBackColor = false;
             this.btnCreateExpense.Click += new System.EventHandler(this.btnCreateExpense_Click);
             // 
+            // txtValueExpense
+            // 
+            this.txtValueExpense.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValueExpense.Location = new System.Drawing.Point(79, 344);
+            this.txtValueExpense.Name = "txtValueExpense";
+            this.txtValueExpense.Size = new System.Drawing.Size(269, 20);
+            this.txtValueExpense.TabIndex = 65;
+            // 
             // Create_expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,7 +204,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblHeaderExpense;
         private System.Windows.Forms.Label lblValueBalance;
-        private System.Windows.Forms.TextBox txtValueExpense;
         private System.Windows.Forms.DateTimePicker dtpDateExpense;
         private System.Windows.Forms.Label lblValueExpense;
         private System.Windows.Forms.ComboBox cbxNameExpense;
@@ -212,5 +211,6 @@
         private System.Windows.Forms.Label lblNameExpense;
         private System.Windows.Forms.Button btnExpenseReturn;
         private System.Windows.Forms.Button btnCreateExpense;
+        private System.Windows.Forms.TextBox txtValueExpense;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,17 +23,33 @@ namespace sistema_finaneiro
 
         private void btnCreateExpense_Click(object sender, EventArgs e)
         {
-            sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
-            Double.Parse(txtValueExpense.Text), dtpDateExpense.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
-            Convert.ToInt32(cbxNameExpense.SelectedValue.ToString()));
+            if (cbxNameExpense.Text != "" && dtpDateExpense.Text != "" && txtValueExpense.Text != "")
+            {
+                sql = string.Format("insert into Registration values (null , '{0}', '{1}', '{2}', '{3}')",
+                txtValueExpense.Text.Replace(',', '.'), dtpDateExpense.Value.ToString("yyyy-MM-dd"), UserClass.getUserId(),
+                Convert.ToInt32(cbxNameExpense.SelectedValue.ToString()));
 
-            if (UserClass.UpdateData(sql) > 0)
+                if (UserClass.UpdateData(sql) > 0)
+                {
+                    sql = string.Format("update User set expense = expense + '{0}', balance = balance - '{1}' where id = '{2}'", txtValueExpense.Text.Replace(',', '.'),
+                    txtValueExpense.Text.Replace(',', '.'), UserClass.getUserId());
+                    if (UserClass.UpdateData(sql) > 0)
+                    {
+                        MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não foi possível adicionar a despesa. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possível adicionar a despesa. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            } else
             {
-                MessageBox.Show("Receita criada com sucesso!", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Não foi possível criar a categoria. Entre em contato com o suporte.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha todos os campos para continuar.", "Criação", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -68,11 +85,20 @@ namespace sistema_finaneiro
                 cbxNameExpense.DisplayMember = "name";
                 cbxNameExpense.ValueMember = "id";
             }
+
+            sql = string.Format("select * from User where id = '{0}'", UserClass.getUserId());
+            dt = UserClass.DataList(sql);
+            lblValueBalance.Text = "R$ " + dt.Rows[0]["expense"].ToString();
         }
 
         private void btnExpenseReturn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtValueExpense_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
