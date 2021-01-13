@@ -1,4 +1,4 @@
-# 💻 Sistema Financeiro - Desktop - C#
+# 💻 Sistema Financeiro - Desktop - C-Sharp
 ## (Sistema de gestão financeira pessoal e empresarial)
 
 Sistema financeiro para auxiliar na gestão monetária pessoal ou empresarial a partir de um software para Windows programado em C# com MySql.
