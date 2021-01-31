@@ -1,7 +1,6 @@
-# 💻 Sistema Financeiro - Desktop - C-Sharp
-## (Sistema de gestão financeira pessoal e empresarial)
+# 💻 Financial System - Desktop - C-Sharp
+## (Personal and business financial management system)
 
-Sistema financeiro para auxiliar na gestão monetária pessoal ou empresarial a partir de um software para Windows programado em C# com MySql.
+Financial system to assist in personal or business monetary management from Windows software programmed in C # with MySql.
 
-O projeto utiliza **C#** com integração **MySql** a partir das tecnologias de Windows Form
-
+The project uses **C#** with **MySql** integration using Windows Form technologies
